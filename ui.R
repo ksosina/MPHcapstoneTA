@@ -4,7 +4,7 @@ source("server.R")
 ## Specify layout
 shinyUI(pageWithSidebar(
 	
-	headerPanel(HTML("MPH capstone TA office hours - 2016 version")),
+	headerPanel(HTML("MPH capstone TA office hours - 2017 version")),
 	
 	
 	sidebarPanel(
@@ -30,7 +30,7 @@ shinyUI(pageWithSidebar(
 			HTML("Available: Thursdays & Fridays")
 		),
 
-		## TA: Leo
+		## TA: Stephen
 		conditionalPanel(
 			condition = "input.ta == 'Leo'",
 	
@@ -50,9 +50,9 @@ shinyUI(pageWithSidebar(
 			HTML("Available: Tuesdays & Thursdays")
 		),
 
-		## TA: Emily
+		## TA: Molly
 		conditionalPanel(
-			condition = "input.ta == 'Emily'",
+			condition = "input.ta == 'Molly'",
 	
 			## Area of focus
 			helpText("Areas of focus: international health, qualitative research, social & behavioral sciences"),
@@ -140,8 +140,8 @@ shinyUI(pageWithSidebar(
                 h4("Emily Hurley"),
 				tags$p("Mondays 2:30–4:30pm, Tuesdays 9:00-11:00 am"),
 				helpText("Areas of focus: international health, qualitative research, social & behavioral sciences"),
-                h4("Leonardo Collado Torres"),
-				tags$p("Tuesdays & Fridays 1-3pm"),
+                h4("Stephen Cristiano"),
+				tags$p("Tuesdays & Fridays 1:30-3:30pm"),
 				helpText("Areas of focus: biostatistics, genomics"),
 				h4("Youssef Farag"),
 				tags$p("Thursdays 1:15-3:15pm, Fridays 2-6 pm as of April 11th, 2016"),
@@ -199,7 +199,7 @@ shinyUI(pageWithSidebar(
 				h4("Add the public calendar"),
 				helpText("You can add the public calendar to your client by either adding the public Google calendar from the 'Current reservations' tab (refresh rate is very slow) or using your own calendar application and choosing a high refresh rate."),
 				helpText("For example, in a Mac you can use the 'Calendar' app, then go to 'File' -> 'New calendar subscription ...' -> enter the calendar URL -> choose a refresh rate of every 5 (or 15) minutes."),
-				HTML("<a href='https://lcolladotor.shinyapps.io/MPHcapstoneTA/publicCalendar.ics'>Public calendar URL</a>."),
+				HTML("<a href='https://scristia.shinyapps.io/MPHcapstoneTA/publicCalendar.ics'>Public calendar URL</a>."),
 				h4("Enter the TA password"),
 				textInput("tapass", "TA password", ""),
 				h4("View details on recent reservations"),

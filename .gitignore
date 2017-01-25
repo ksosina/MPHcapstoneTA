@@ -5,7 +5,7 @@
 setup.R
 
 ## Dropbox files
-lcollado-droptoken.rds
+scristia-droptoken.rds
 .httr-oauth
 
 ## Misc
