@@ -1,19 +1,19 @@
 ## Setup
 library("shiny")
-library("sendmailR")
+#library("sendmailR")
 library("mail")
 library("rdrop2")
 
 ## Load data
-#load("tapass.Rdata")
-#load("taemails.Rdata")
-#load("TAroom.Rdata")
+load("tapass.Rdata")
+load("taemails.Rdata")
+load("TAroom.Rdata")
 token <- readRDS("scristia-droptoken.rds")
 
 ## Options
 TAchoices <- list(
 	"Monday" = c("Choose a TA", "Danielle Edwards" = "Danielle", "Youssef Farag" = "Youssef"),
-	"Tuesday" = c("Choose a TA", "Stephen Cristiano" = "Stephen"),
+	"Tuesday" = c("Choose a TA", "Stephen Cristiano" = "Stephen", "Danielle Edwards" = "Danielle"),
 	"Wednesday" = c("Choose a TA", "Molly Lasater" = "Molly", "Youssef Farag" = "Youssef"),
 	"Thursday" = c("Choose a TA", "Danielle Edwards" = "Danielle"),
 	"Friday" = c("Choose a TA", "Youssef Farag" = "Youssef", "Stephen Cristiano" = "Stephen", "Molly Lasater" = "Molly")
@@ -36,7 +36,7 @@ TAhour <- list(
 	),
 	"Danielle" = list(
 		"Monday" = c("10:45-11:15", "11:15-11:45", "13:20-13:50", "13:50-14:20"),
-		"Tuesday" = "00:00",
+		"Tuesday" = c("13:00-13:30", "13:30-14:00", "14:00-14:30", "14:30-15:00"),
 		"Wednesday" = "00:00",
 		"Thursday" = "00:00",
 		"Friday" = "00:00"
@@ -54,8 +54,8 @@ TAhour <- list(
 ## Download latest from Dropbox
 drop_get("github/MPHcapstoneTA/reservations.Rdata", overwrite = TRUE, dtoken = token)
 drop_get("github/mphcapstoneta/www/publicCalendar.ics", local_file = "www/publicCalendar.ics", overwrite = TRUE, dtoken = token)
-drop_get("github/mphcapstoneta/www/publicCalendar-Leo.ics", local_file = "www/publicCalendar-Leo.ics", overwrite = TRUE, dtoken = token)
-drop_get("github/mphcapstoneta/www/publicCalendar-Emily.ics", local_file = "www/publicCalendar-Emily.ics", overwrite = TRUE, dtoken = token)
+drop_get("github/mphcapstoneta/www/publicCalendar-Stephen.ics", local_file = "www/publicCalendar-Stephen.ics", overwrite = TRUE, dtoken = token)
+drop_get("github/mphcapstoneta/www/publicCalendar-Molly.ics", local_file = "www/publicCalendar-Molly.ics", overwrite = TRUE, dtoken = token)
 drop_get("github/mphcapstoneta/www/publicCalendar-Youssef.ics", local_file = "www/publicCalendar-Youssef.ics", overwrite = TRUE, dtoken = token)
 drop_get("github/mphcapstoneta/www/publicCalendar-Danielle.ics", local_file = "www/publicCalendar-Danielle.ics", overwrite = TRUE, dtoken = token)
 
@@ -115,7 +115,6 @@ buildMsg <- function(new, tentative="*tentative* ") {
 	
 	## Assign room
 	mtgRoom <- assignRoom(new$TA, new$desiredDate)
-		
 	## Construct the message
 	msg <- paste0(c(
 		"Dear ", new$Student, ", your ", tentative, "office hour reservation is with TA ", new$TA, " on ", as.character(as.Date(new$desiredDate, tz="America/New_York")), " at ", new$officeHour, ". You have specified that your email is ", new$Email, ". Furthermore, you are ", ifelse(new$Distance == "No", "not ", ""), "a distance student", ifelse(new$Distance == "Yes", tmpSkype, ""), ", and your MPH concentration is '", new$Concentration, "'.\n The meeting will be at ", mtgRoom, "."
@@ -225,7 +224,7 @@ buildEmail <- function(new, action="confirm", verbose=TRUE, email=TRUE) {
 	
 	msg <- paste0(msg, "\n\nProblem description:\n", new$Description)
 	if(action=="confirm") {		
-		msgStudent <- paste0(msg, "\n\nIf for some reason you need to cancel your reservation (minimum 24 hrs notice), please do so through https://lcolladotor.shinyapps.io/MPHcapstoneTA/. You will have to choose the TA, office hour, enter your name, email and MPH concentration (to verify your identity) in order to cancel.")
+		msgStudent <- paste0(msg, "\n\nIf for some reason you need to cancel your reservation (minimum 24 hrs notice), please do so through https://scristia.shinyapps.io/MPHcapstoneTA/. You will have to choose the TA, office hour, enter your name, email and MPH concentration (to verify your identity) in order to cancel.")
 		subject <- paste("New TA reservation:", as.character(as.Date(new$desiredDate, tz="America/New_York")), "at", new$officeHour)
 	} else {
 		subject <- paste("Cancelled TA reservation:", as.character(as.Date(new$desiredDate, tz="America/New_York")), "at", new$officeHour)
@@ -422,7 +421,7 @@ shinyServer(function(input, output, session) {
 			sink(paste0("www/", confFile))
 			cat(emailInfo$msg)
 			sink()
-			HTML(paste0("Download <a href='https://lcolladotor.shinyapps.io/MPHcapstoneTA/", confFile, "'>confirmation information</a>."))
+			HTML(paste0("Download <a href='https://scristia.shinyapps.io/MPHcapstoneTA/", confFile, "'>confirmation information</a>."))
 		} else{
 			HTML("")	
 		}

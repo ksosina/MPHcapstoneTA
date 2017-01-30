@@ -17,7 +17,7 @@ shinyUI(pageWithSidebar(
 		selectInput("weekday", "Weekday", c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")),	
 		
 		## Choose TA
-		selectInput("ta", "TA", c("Choose a TA", "Youssef Farag" = "Youssef", "Danielle Edwards" = "Danielle", "Emily Hurley" = "Emily", "Leonardo Collado Torres" = "Leo")),
+		selectInput("ta", "TA", c("Choose a TA", "Youssef Farag" = "Youssef", "Danielle Edwards" = "Danielle", "Molly Lasater" = "Molly", "Stephen Cristiano" = "Stephen")),
 		
 		#### TA info
 		## TA: Youssef
@@ -27,12 +27,12 @@ shinyUI(pageWithSidebar(
 			## Area of focus
 			helpText("Areas of focus: epidemiology (methods, cardiometabolic and non-communicable diseases, cancer, environmental/occupational epidemiology), NHANES and survey data analysis, global health"),
 			tags$hr(),
-			HTML("Available: Thursdays & Fridays")
+			HTML("Available: Mondays & Fridays")
 		),
 
 		## TA: Stephen
 		conditionalPanel(
-			condition = "input.ta == 'Leo'",
+			condition = "input.ta == 'Stephen'",
 	
 			## Area of focus
 			helpText("Areas of focus: biostatistics, genomics"),
@@ -47,7 +47,7 @@ shinyUI(pageWithSidebar(
 			## Area of focus
 			helpText("Areas of focus: bioethics, health policy, law"),
 			tags$hr(),
-			HTML("Available: Tuesdays & Thursdays")
+			HTML("Available: Mondays & Tuesdays")
 		),
 
 		## TA: Molly
@@ -57,7 +57,7 @@ shinyUI(pageWithSidebar(
 			## Area of focus
 			helpText("Areas of focus: international health, qualitative research, social & behavioral sciences"),
 			tags$hr(),
-			HTML("Available: Mondays & Tuesdays")
+			HTML("Available: Wednesdays & Fridays")
 		),
 		
 		## Office hour
@@ -68,7 +68,7 @@ shinyUI(pageWithSidebar(
 		
 		textInput("name", "Name", "Your name"),
 		textInput("email", "Email", "Your email"),
-		selectInput("distance", "Are you a distance student?", c("No", "Yes")),
+		selectInput("distance", "Are you requesting a Skype meeting?", c("No", "Yes")),
 		conditionalPanel(
 			condition = "input.distance == 'Yes'",
 			textInput("skype", "Skype username", "")
@@ -96,7 +96,7 @@ shinyUI(pageWithSidebar(
 		h4("Final step"),
 		selectInput("reserve", "Action to perform", c("", "Submit reservation", "Cancel reservation")),
 		helpText("Verify that you see the confirmation of your reservation/cancellation."),
-		HTML("You must <a href='https://lcolladotor.shinyapps.io/MPHcapstoneTA/'>reload the site</a> to perform another action.")
+		HTML("You must <a href='https://scristia.shinyapps.io/MPHcapstoneTA/'>reload the site</a> to perform another action.")
 		
 	),
 		
@@ -135,16 +135,16 @@ shinyUI(pageWithSidebar(
 			),			
 			tabPanel("TA info",				
                 h4("Danielle Edwards"),
-				tags$p("Tuesdays & Thursdays 10:30-12:30"),
-				helpText("Areas of focus: bioethics, health policy, law"),
-                h4("Emily Hurley"),
-				tags$p("Mondays 2:30–4:30pm, Tuesdays 9:00-11:00 am"),
-				helpText("Areas of focus: international health, qualitative research, social & behavioral sciences"),
+				tags$p("Mondays 10:45-11:45pm & 1:20-2:20pm, Tuesdays (Skype) 1:00-3:00pm"),
+				helpText("Areas of focus: bioethics, health policy, law, food policy"),
+                h4("Molly Lasater"),
+				tags$p("Wednesdays 12:00–2:00pm, Fridays 10:00am-12:00pm"),
+				helpText("Areas of focus: international health, mental health qualitative research, social & behavioral sciences"),
                 h4("Stephen Cristiano"),
 				tags$p("Tuesdays & Fridays 1:30-3:30pm"),
 				helpText("Areas of focus: biostatistics, genomics"),
 				h4("Youssef Farag"),
-				tags$p("Thursdays 1:15-3:15pm, Fridays 2-6 pm as of April 11th, 2016"),
+				tags$p("Mondays 4:30-6:30pm, Fridays 2:30-4:30pm"),
 				helpText("Areas of focus: epidemiology (methods, cardiometabolic and non-communicable diseases, cancer, environmental/occupational epidemiology), NHANES and survey data analysis, global health"),
 				tags$hr()
 				
@@ -209,7 +209,7 @@ shinyUI(pageWithSidebar(
 				dataTableOutput("recent"),
 				helpText("Requires password to display the information."),
 				h4("Download calendar"),
-				selectInput("taname", "Select a TA", c("All", "Youssef", "Leo", "Danielle", "Emily")),
+				selectInput("taname", "Select a TA", c("All", "Youssef", "Stephen", "Danielle", "Molly")),
 				helpText("If you selected a TA, only the events for that TA will appear in the calendar."),
 				downloadButton('calendar', 'Download'),
 				helpText("TA password is required."),
@@ -221,13 +221,17 @@ shinyUI(pageWithSidebar(
 				helpText("TA password is required."),
 				tags$hr()
 			),
+#      tabPanel("Resources",
+#               HTML("Maps")
+#      ),
 			tabPanel("Credits",
 				HTML("Inspired by Alyssa Frazee's <a href='http://biostat.jhsph.edu/~afrazee/mphcapstone.html'>MPH capstone office hour sign-up</a>. This is an attempt to make things more automized and to concentrate all sign up forms in one location."),
 				tags$hr(),
 				HTML("Powered by <a href='http://www.rstudio.com/shiny/'>Shiny</a> and hosted by <a href='http://www.rstudio.com/'>RStudio</a>."),
 				tags$hr(),
 				HTML("Developed by <a href='http://bit.ly/LColladoTorres'>L. Collado Torres</a>."),
-				HTML("Version 0.0.17. Code hosted by <a href='https://github.com/lcolladotor/MPHcapstoneTA'>GitHub</a>."),
+				HTML("Currently maintained by Stephen Cristiano."),
+				HTML("Version 0.0.17. Code hosted by <a href='https://github.com/scristia/MPHcapstoneTA'>GitHub</a>."),
 				tags$hr()
 			)
 			

@@ -2,39 +2,33 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//JHSPH//MPHcapstone//EN
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Po-Yang Tsou Location Wolfe W2033 
+SUMMARY: Po-Yang Tsou ptsou1@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170130T091200
 DTSTART;TZID=US/Eastern:20170203T143000
 DTEND;TZID=US/Eastern:20170203T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Md Sohel Rana Location Wolfe W2033 
+SUMMARY: Md Sohel Rana mrana5@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170130T091600
 DTSTART;TZID=US/Eastern:20170203T150000
 DTEND;TZID=US/Eastern:20170203T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Jessica Magenwirth Location *to be determined* 
+SUMMARY: Jessica Magenwirth jessica.magenwirth@jhu.edu jessi.ma. 1. MPH Customized Program of Study *to be determined* 
 DTSTAMP:20170130T091900
 DTSTART;TZID=US/Eastern:20170206T163000
 DTEND;TZID=US/Eastern:20170206T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Phuong Tran Location *to be determined* 
+SUMMARY: Phuong Tran ptran20@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research *to be determined* 
 DTSTAMP:20170130T092900
 DTSTART;TZID=US/Eastern:20170206T170000
 DTEND;TZID=US/Eastern:20170206T173000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Carolyn Tieu Location Wolfe W2033 
+SUMMARY: Carolyn Tieu ctieu1@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170130T115200
 DTSTART;TZID=US/Eastern:20170203T153000
 DTEND;TZID=US/Eastern:20170203T160000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Spencer Location Wolfe W2033 
-DTSTAMP:20170130T124100
-DTSTART;TZID=US/Eastern:20170203T160000
-DTEND;TZID=US/Eastern:20170203T163000
 END:VEVENT
 END:VCALENDAR
