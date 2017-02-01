@@ -9,6 +9,9 @@ setup.R
 scristia-droptoken.rds
 .httr-oauth
 
+## Gmail
+.gmail_private
+
 ## Misc
 rsconnect
 Old
