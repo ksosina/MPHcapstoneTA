@@ -1,7 +1,7 @@
 ## Setup
 library("shiny")
 #library("sendmailR")
-library("mail")
+#library("mail")
 library("mygmailR")
 library("rdrop2")
 
@@ -118,7 +118,7 @@ buildMsg <- function(new, tentative="*tentative* ") {
 	mtgRoom <- assignRoom(new$TA, new$desiredDate)
 	## Construct the message
 	msg <- paste0(c(
-		"Dear ", new$Student, ", your ", tentative, "office hour reservation is with TA ", new$TA, " on ", as.character(as.Date(new$desiredDate, tz="America/New_York")), " at ", new$officeHour, ". You have specified that your email is ", new$Email, ". Furthermore, you are ", ifelse(new$Distance == "No", "not ", ""), "a distance student", ifelse(new$Distance == "Yes", tmpSkype, ""), ", and your MPH concentration is <", new$Concentration, ">.\\n The meeting will be at ", mtgRoom, "."
+		"Dear ", new$Student, ", your ", tentative, "office hour reservation is with TA ", new$TA, " on ", as.character(as.Date(new$desiredDate, tz="America/New_York")), " at ", new$officeHour, ". You have specified that your email is ", new$Email, ". Furthermore, you are ", ifelse(new$Distance == "No", "not ", ""), "a distance student", ifelse(new$Distance == "Yes", tmpSkype, ""), ", and your MPH concentration is <", new$Concentration, ">.\n The meeting will be at ", mtgRoom, "."
 	), collapse="") 
 	return(msg)
 }
@@ -223,19 +223,19 @@ buildEmail <- function(new, action="confirm", verbose=TRUE, email=TRUE) {
 	tentative <- ifelse(action == "confirm", "*confirmed* ", "*cancelled* ")
 	msg <- buildMsg(new, tentative)
 	
-	msg <- paste0(msg, "\\n\\nProblem description:\\n", new$Description)
+	msg <- paste0(msg, "\n\nProblem description:\n", new$Description)
 	if(action=="confirm") {		
-		msgStudent <- paste0(msg, "\\n\\nIf for some reason you need to cancel your reservation (minimum 24 hrs notice), please do so through https://scristia.shinyapps.io/MPHcapstoneTA/. You will have to choose the TA, office hour, enter your name, email and MPH concentration (to verify your identity) in order to cancel.")
+		msgStudent <- paste0(msg, "\n\nIf for some reason you need to cancel your reservation (minimum 24 hrs notice), please do so through https://scristia.shinyapps.io/MPHcapstoneTA/. You will have to choose the TA, office hour, enter your name, email and MPH concentration (to verify your identity) in order to cancel.")
 		subject <- paste("New TA reservation:", as.character(as.Date(new$desiredDate, tz="America/New_York")), "at", new$officeHour)
 	} else {
 		subject <- paste("Cancelled TA reservation:", as.character(as.Date(new$desiredDate, tz="America/New_York")), "at", new$officeHour)
-		msgStudent <- paste0(msg, "\\n\\n Hopefully everything is ok. Please try to minimize as much as the number of times you have to cancel a TA office hour reservation.")
+		msgStudent <- paste0(msg, "\n\n Hopefully everything is ok. Please try to minimize as much as the number of times you have to cancel a TA office hour reservation.")
 	}
 	
 	if(email) {
-		msg <- paste0("Reservation details\\n-------------------------------\\n\\n", msg, "\\n\\n-------------------------------\\nPlease do not reply to this email address as no one is checking it.")
+		msg <- paste0("Reservation details\n-------------------------------\n\n", msg, "\n\n-------------------------------\nPlease do not reply to this email address as no one is checking it.")
 	} else {
-		msg <- paste0("Reservation details\\n-------------------------------\\n\\n", msg, "\\n\\n-------------------------------\\n\\n")
+		msg <- paste0("Reservation details\n-------------------------------\n\n", msg, "\n\n-------------------------------\n\n")
 	}
 	
 	# msgStudent <- paste0(msgStudent, "\n\n-------------------------------\nPlease do not reply to this email address as no one is checking it.")
@@ -260,7 +260,10 @@ confirmEmail <- function(from, to, subject, msg) {
     ## Currently not working (2015-01-20) with sendmailR
 	#sendmail(from, to=to, subject=subject, msg=msg, control=list(smtpServer="ASPMX.L.GOOGLE.COM"))
 #    mail::sendmail(recipient = to, subject = subject, message = msg)
-	send_gmail(subject = subject, body = msg, to = to, dir_private = ".")
+	
+  msg <- gsub("\n", "\\\\n", msg)
+  msg <- gsub("\"|'", "*", msg)
+  send_gmail(subject = subject, body = msg, to = to, dir_private = ".")
   return("\n")
 }
 

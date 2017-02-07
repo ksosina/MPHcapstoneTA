@@ -2,63 +2,57 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//JHSPH//MPHcapstone//EN
 BEGIN:VEVENT
-SUMMARY: TA Stephen Student Stephen Cristiano Location Wolfe W2009 
+SUMMARY: Stephen Cristiano stephen.cristiano@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170129T172900
 DTSTART;TZID=US/Eastern:20170131T133000
 DTEND;TZID=US/Eastern:20170131T140000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Stephen Student Arnav Srivastava Location Wolfe W2009 
+SUMMARY: Arnav Srivastava asrivas9@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170130T090300
 DTSTART;TZID=US/Eastern:20170131T140000
 DTEND;TZID=US/Eastern:20170131T143000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Stephen Student Anaeze Offodile Location Wolfe W2009 
+SUMMARY: Anaeze Offodile anaeze.offodile@jhmi.edu  8. Health Systems & Policy Wolfe W2009 
 DTSTAMP:20170130T105900
 DTSTART;TZID=US/Eastern:20170203T150000
 DTEND;TZID=US/Eastern:20170203T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Stephen Student Phuong Tran Location Wolfe W2009 
+SUMMARY: Phuong Tran ptran20@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170130T135400
 DTSTART;TZID=US/Eastern:20170131T150000
 DTEND;TZID=US/Eastern:20170131T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Stephen Student Linh Bui Location Wolfe W2009 
+SUMMARY: Linh Bui linhbui@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170130T142800
 DTSTART;TZID=US/Eastern:20170207T133000
 DTEND;TZID=US/Eastern:20170207T140000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Stephen Student Stephen Cristiano Location Wolfe W2009 
+SUMMARY: Stephen Cristiano stephen.cristiano@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170202T091300
 DTSTART;TZID=US/Eastern:20170203T133000
 DTEND;TZID=US/Eastern:20170203T140000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Stephen Student Stephen Cristiano Location Wolfe W2009 
+SUMMARY: Stephen Cristiano stephen.cristiano@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170202T091300
 DTSTART;TZID=US/Eastern:20170203T133000
 DTEND;TZID=US/Eastern:20170203T140000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Stephen Student Phuong Tran Location Wolfe W2009 
+SUMMARY: Phuong Tran ptran20@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170202T135500
 DTSTART;TZID=US/Eastern:20170207T140000
 DTEND;TZID=US/Eastern:20170207T143000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Stephen Student Meredith Location Wolfe W2009 
+SUMMARY: Meredith meredithlu@jhu.edu  6. Health in Crisis & Humanitarian Assistance Wolfe W2009 
 DTSTAMP:20170203T162800
 DTSTART;TZID=US/Eastern:20170207T143000
 DTEND;TZID=US/Eastern:20170207T150000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Stephen Student Raksha Gupta Location Wolfe W2009 
-DTSTAMP:20170207T153100
-DTSTART;TZID=US/Eastern:20170210T133000
-DTEND;TZID=US/Eastern:20170210T140000
 END:VEVENT
 END:VCALENDAR
