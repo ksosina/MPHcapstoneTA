@@ -47,7 +47,7 @@ shinyUI(pageWithSidebar(
 			## Area of focus
 			helpText("Areas of focus: bioethics, health policy, law"),
 			tags$hr(),
-			HTML("Available: Mondays & Tuesdays")
+			HTML("Available Skype only: Mondays & Tuesdays")
 		),
 
 		## TA: Molly
@@ -135,7 +135,7 @@ shinyUI(pageWithSidebar(
 			),			
 			tabPanel("TA info",				
                 h4("Danielle Edwards"),
-				tags$p("Mondays 10:45-11:45pm & 1:20-2:20pm, Tuesdays (Skype) 1:00-3:00pm"),
+				tags$p("Mondays (Skype) 10:45-11:45pm & 1:20-2:20pm, Tuesdays (Skype) 1:00-3:00pm"),
 				helpText("Areas of focus: bioethics, health policy, law, food policy"),
                 h4("Molly Lasater"),
 				tags$p("Wednesdays 12:00–2:00pm, Fridays 10:00am-12:00pm"),
