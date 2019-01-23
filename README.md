@@ -5,7 +5,7 @@ Shiny app made so students can sign up and reserve office hour slots with MPH ca
 
 ## Found a bug?
 
-Please document the problem and submit it in the [issues](https://github.com/scristia/MPHcapstoneTA/issues) page. Thank you!
+Please document the problem and submit it in the [issues](https://github.com/ksosina/MPHcapstoneTA/issues) page. Thank you!
 
 ## Credits
 
