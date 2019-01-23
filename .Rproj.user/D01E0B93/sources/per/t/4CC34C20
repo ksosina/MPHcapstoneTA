@@ -2,18 +2,18 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1548259032074.000,
-    "dirty" : false,
+    "dirty" : true,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "2274939354",
     "id" : "4CC34C20",
     "lastKnownWriteTime" : 1548272772,
-    "last_content_update" : 1548272772642,
+    "last_content_update" : 1548273556158,
     "path" : "C:/Users/kayod/Dropbox/GitHub/MPHcapstoneTA/ui.R",
     "project_path" : "ui.R",
     "properties" : {
-        "cursorPosition" : "248,90",
-        "scrollLine" : "202"
+        "cursorPosition" : "83,31",
+        "scrollLine" : "52"
     },
     "relative_order" : 5,
     "source_on_save" : false,
