@@ -22,7 +22,7 @@ fluidPage(theme = shinytheme("darkly"),
               selectInput("ta", "TA", c("Choose a TA", "Prosenjit Kundu" = "Prosenjit", "Daniel Antiporta Penaloza" = "Daniel", "Hojoon Lee" = "Hojoon", "Kayla Tormohlen" = "Kayla", "Kayode Sosina" = "Kayode")),
               
               #### TA info
-              ## TA: Jordan
+              ## TA: Prosenjit
               conditionalPanel(
                 condition = "input.ta == 'Prosenjit'",
                 
@@ -146,9 +146,12 @@ fluidPage(theme = shinytheme("darkly"),
                          helpText("Note that the calendar has a very slow refresh rate due to how Google Calendar works.")
                 ),			
                 tabPanel("TA info",				
-                         h4("Jordan Johns"),
+                         h4("Prosenjit Kundu"),
                          tags$p(" Monday 3- 5 pm, Tuesday 1-3 pm"),
-                         helpText("Areas of focus: Biostatistics, wearables and activity monitoring, functional data analysis"),
+                         helpText("Areas of focus: Biostatistics, meta-analysis, Stats-Genetics"),
+                         h4("Kayode Sosina"),
+                         tags$p(" Monday 3- 5 pm, Tuesday 1-3 pm"),
+                         helpText("Areas of focus: Biostatistics, Stats-Genetics, Genomics"),
                          h4("Hojoon Lee"),
                          tags$p(" Wednesday 12:00-2:00 pm, Thursday 3:00- 5:00 pm"),
                          helpText("Areas of focus:general epidemiology (methods, study design), public health surveillance, professional epidemiology methods, epidemiology implementation"),
@@ -242,8 +245,8 @@ fluidPage(theme = shinytheme("darkly"),
                          HTML("Powered by <a href='http://www.rstudio.com/shiny/'>Shiny</a> and hosted by <a href='http://www.rstudio.com/'>RStudio</a>."),
                          tags$hr(),
                          HTML("Developed by <a href='http://bit.ly/LColladoTorres'>L. Collado Torres</a>."),
-                         HTML("Updated by Stephen Cristiano."),
-                         HTML("Currently maintained by Kayode Sosina."),
+                         HTML("Updated by <a href='https://github.com/scristia'>Stephen Cristiano</a>."),
+                         HTML("Currently maintained by <a href='https://github.com/ksosina'>Kayode Sosina</a>."),
                          HTML("Version 1.0.00. Code hosted by <a href='https://github.com/ksosina/MPHcapstoneTA'>GitHub</a>."),
                          tags$hr()
                 )
