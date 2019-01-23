@@ -1,0 +1,24 @@
+# password for email
+if(!file.exists("tapass.Rdata")){
+  tapass <- "hopkins05"
+  save(tapass, file = "tapass.Rdata")
+}
+
+#  Generate TAroom data
+if(!file.exists("TAroom.Rdata")){
+  source(file.path(".", "TAroom.R"))
+}
+
+# TA's and their emails
+if(!file.exists("taemails.Rdata")){
+  taemails <- data.frame("emails" = letters[1:5], "ta" = c("Prosenjit", "Kayode", "Daniel", "Hojoon", "Kayla"))
+  save(tapass, file = "taemails.Rdata")
+}
+
+
+if(!file.exists("droptoken.rds")){
+  # If you wish to save the tokens, for local/remote use
+  library(rdrop2)
+  token <- drop_auth()
+  saveRDS(token, file = "droptoken.rds")
+}
