@@ -2,103 +2,103 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//JHSPH//MPHcapstone//EN
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Rachel Kozy Location Hampton 145HH 
+SUMMARY: Rachel Kozy rachelkozy@gmail.com rachelkozy@gmail.com 1. MPH Customized Program of Study *to be determined* 
 DTSTAMP:20170130T141600
 DTSTART;TZID=US/Eastern:20170201T130000
 DTEND;TZID=US/Eastern:20170201T133000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Niyati Thakker Location Hampton 145HH 
+SUMMARY: Niyati Thakker Nthakker@jhu.edu  8. Health Systems & Policy *to be determined* 
 DTSTAMP:20170131T112000
 DTSTART;TZID=US/Eastern:20170201T133000
 DTEND;TZID=US/Eastern:20170201T140000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Kendra Location Wolfe W2207 
+SUMMARY: Kendra molly.lasater@gmail.com  1. MPH Customized Program of Study *to be determined* 
 DTSTAMP:20170206T093700
 DTSTART;TZID=US/Eastern:20170208T120000
 DTEND;TZID=US/Eastern:20170208T123000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Brigette Blacker Location Hampton 145HH 
+SUMMARY: Brigette Blacker bblacke1@jhu.edu  6. Health in Crisis & Humanitarian Assistance *to be determined* 
 DTSTAMP:20170207T200400
 DTSTART;TZID=US/Eastern:20170215T123000
 DTEND;TZID=US/Eastern:20170215T130000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Rawan Location Wolfe W2205 
+SUMMARY: Rawan rawan-t-90@hotmail.com  1. MPH Customized Program of Study *to be determined* 
 DTSTAMP:20170215T180400
 DTSTART;TZID=US/Eastern:20170222T123000
 DTEND;TZID=US/Eastern:20170222T130000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Nicholas Lehnertz Location Wolfe W2033 
+SUMMARY: Nicholas Lehnertz nlehner2@jhmi.edu  1. MPH Customized Program of Study *to be determined* 
 DTSTAMP:20170315T134100
 DTSTART;TZID=US/Eastern:20170322T130000
 DTEND;TZID=US/Eastern:20170322T133000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Charlotte Kaye Location Wolfe E2133 
+SUMMARY: Charlotte Kaye ckaye1@jhu.edu  8. Health Systems & Policy *to be determined* 
 DTSTAMP:20170328T112600
 DTSTART;TZID=US/Eastern:20170331T100000
 DTEND;TZID=US/Eastern:20170331T103000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Amitoj  Location Wolfe E2133 
+SUMMARY: Amitoj  abrar2@jhu.edu  1. MPH Customized Program of Study *to be determined* 
 DTSTAMP:20170328T125300
 DTSTART;TZID=US/Eastern:20170331T113000
 DTEND;TZID=US/Eastern:20170331T120000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Molly Location Wolfe E2133 
+SUMMARY: Molly molly.lasater@gmail.com  2. Child & Adolescent Health *to be determined* 
 DTSTAMP:20170328T130200
 DTSTART;TZID=US/Eastern:20170331T110000
 DTEND;TZID=US/Eastern:20170331T113000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Alia Manshio Location Wolfe W4013 
+SUMMARY: Alia Manshio amanshio@gmail.com  10. Social & Behavioral Sciences in Public Health *to be determined* 
 DTSTAMP:20170403T000600
 DTSTART;TZID=US/Eastern:20170407T110000
 DTEND;TZID=US/Eastern:20170407T113000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Andrew Lehman Location Wolfe W2033 
+SUMMARY: Andrew Lehman blehm98@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research *to be determined* 
 DTSTAMP:20170404T115100
 DTSTART;TZID=US/Eastern:20170405T133000
 DTEND;TZID=US/Eastern:20170405T140000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Angela Silveira Location Wolfe E2133 
+SUMMARY: Angela Silveira angela.s@jhu.edu  6. Health in Crisis & Humanitarian Assistance *to be determined* 
 DTSTAMP:20170406T103900
 DTSTART;TZID=US/Eastern:20170414T103000
 DTEND;TZID=US/Eastern:20170414T110000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Molly Location Wolfe W2033 
+SUMMARY: Molly molly.lasater@gmail.com  1. MPH Customized Program of Study *to be determined* 
 DTSTAMP:20170407T112900
 DTSTART;TZID=US/Eastern:20170412T120000
 DTEND;TZID=US/Eastern:20170412T123000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Adebamike Oshunbade Location Wolfe W2033 
+SUMMARY: Adebamike Oshunbade aoshunb1@jhmi.edu  1. MPH Customized Program of Study *to be determined* 
 DTSTAMP:20170408T165000
 DTSTART;TZID=US/Eastern:20170412T133000
 DTEND;TZID=US/Eastern:20170412T140000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Rachel Chang Location Wolfe E2133 
+SUMMARY: Rachel Chang hchang57@jhu.edu  1. MPH Customized Program of Study *to be determined* 
 DTSTAMP:20170411T115000
 DTSTART;TZID=US/Eastern:20170414T113000
 DTEND;TZID=US/Eastern:20170414T120000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Molly Lasater Location Wolfe E2133 
+SUMMARY: Molly Lasater Molly.lasater@gmail.com  10. Social & Behavioral Sciences in Public Health *to be determined* 
 DTSTAMP:20170414T134000
 DTSTART;TZID=US/Eastern:20170421T100000
 DTEND;TZID=US/Eastern:20170421T103000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Molly Student Molly Location Wolfe E2133 
+SUMMARY: Molly Mlasater@jhu.edu  2. Child & Adolescent Health *to be determined* 
 DTSTAMP:20170414T134200
 DTSTART;TZID=US/Eastern:20170421T103000
 DTEND;TZID=US/Eastern:20170421T110000

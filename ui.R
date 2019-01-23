@@ -4,7 +4,7 @@ source("server.R")
 ## Specify layout
 shinyUI(pageWithSidebar(
 	
-	headerPanel(HTML("MPH capstone TA office hours - 2017 version")),
+	headerPanel(HTML("MPH capstone TA office hours - 2018 version")),
 	
 	
 	sidebarPanel(
@@ -17,47 +17,57 @@ shinyUI(pageWithSidebar(
 		selectInput("weekday", "Weekday", c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")),	
 		
 		## Choose TA
-		selectInput("ta", "TA", c("Choose a TA", "Youssef Farag" = "Youssef", "Danielle Edwards" = "Danielle", "Molly Lasater" = "Molly", "Stephen Cristiano" = "Stephen")),
+		selectInput("ta", "TA", c("Choose a TA", "Jordan Johns" = "Jordan", "Daniel Antiporta Penaloza" = "Daniel", "Hojoon Lee" = "Hojoon", "Kayla Tormohlen" = "Kayla")),
 		
 		#### TA info
-		## TA: Youssef
+		## TA: Jordan
 		conditionalPanel(
-			condition = "input.ta == 'Youssef'",
+			condition = "input.ta == 'Jordan'",
 	
 			## Area of focus
-			helpText("Areas of focus: epidemiology (methods, cardiometabolic and non-communicable diseases, cancer, environmental/occupational epidemiology), NHANES and survey data analysis, global health"),
+			helpText("Areas of focus: Biostatistics, wearables and activity monitoring, functional data analysis"),
 			tags$hr(),
-			HTML("Available: Mondays & Fridays")
+			HTML("Available: Mondays & Tuesdays")
 		),
 
 		## TA: Stephen
+#		conditionalPanel(
+#			condition = "input.ta == 'Stephen'",
+#	
+#			## Area of focus
+#			helpText("Areas of focus: biostatistics, genomics"),
+#			tags$hr(),
+#			HTML("Available: Tuesdays & Fridays")
+#		),
+
+		## TA: Hojoon
 		conditionalPanel(
-			condition = "input.ta == 'Stephen'",
+			condition = "input.ta == 'Hojoon'",
 	
 			## Area of focus
-			helpText("Areas of focus: biostatistics, genomics"),
+			helpText("Areas of focus: general epidemiology (methods, study design), public health surveillance, professional epidemiology methods, epidemiology implementation"),
 			tags$hr(),
-			HTML("Available: Tuesdays & Fridays")
+			HTML("Available: Wednesdays & Thursdays")
 		),
 
-		## TA: Danielle
+		## TA: Daniel
 		conditionalPanel(
-			condition = "input.ta == 'Danielle'",
+			condition = "input.ta == 'Daniel'",
 	
-			## Area of focus
-			helpText("Areas of focus: bioethics, health policy, law"),
+		## Area of focus
+			helpText("Areas of focus: Epidemiological methods, health inequalities, food & nutrition, survey data"),
 			tags$hr(),
-			HTML("Available Skype only: Mondays & Tuesdays")
+			HTML("Available: Mondays")
 		),
-
-		## TA: Molly
-		conditionalPanel(
-			condition = "input.ta == 'Molly'",
-	
-			## Area of focus
-			helpText("Areas of focus: international health, qualitative research, social & behavioral sciences"),
-			tags$hr(),
-			HTML("Available: Wednesdays & Fridays")
+			
+			## TA: Kayla
+			conditionalPanel(
+			  condition = "input.ta == 'Kayla'",
+			  
+			  ## Area of focus
+			  helpText("Areas of focus: Mental health, qualitative research, psychosocial methods, social & behavioral sciences"),
+			  tags$hr(),
+			  HTML("Available: Tuesdays & Wednesdays")
 		),
 		
 		## Office hour
@@ -134,18 +144,18 @@ shinyUI(pageWithSidebar(
 				helpText("Note that the calendar has a very slow refresh rate due to how Google Calendar works.")
 			),			
 			tabPanel("TA info",				
-                h4("Danielle Edwards"),
-				tags$p("Mondays (Skype) 10:45-11:45pm & 1:20-2:20pm, Tuesdays (Skype) 1:00-3:00pm"),
-				helpText("Areas of focus: bioethics, health policy, law, food policy"),
-                h4("Molly Lasater"),
-				tags$p("Wednesdays 12:00–2:00pm, Fridays 10:00am-12:00pm"),
-				helpText("Areas of focus: international health, mental health qualitative research, social & behavioral sciences"),
-                h4("Stephen Cristiano"),
-				tags$p("Tuesdays & Fridays 1:30-3:30pm"),
-				helpText("Areas of focus: biostatistics, genomics"),
-				h4("Youssef Farag"),
-				tags$p("Mondays 4:30-6:30pm, Fridays 2:30-4:30pm"),
-				helpText("Areas of focus: epidemiology (methods, cardiometabolic and non-communicable diseases, cancer, environmental/occupational epidemiology), NHANES and survey data analysis, global health"),
+                h4("Jordan Johns"),
+				tags$p(" Monday 3- 5 pm, Tuesday 1-3 pm"),
+				helpText("Areas of focus: Biostatistics, wearables and activity monitoring, functional data analysis"),
+                h4("Hojoon Lee"),
+				tags$p(" Wednesday 12:00-2:00 pm, Thursday 3:00- 5:00 pm"),
+				helpText("Areas of focus:general epidemiology (methods, study design), public health surveillance, professional epidemiology methods, epidemiology implementation"),
+				        h4("Daniel Antiporta Penaloza"),
+				tags$p(" Monday 1:00-5:00 pm, Tuesday 3:10-5:10 pm"),
+				helpText("Areas of focus: Epidemiological methods, health inequalities, food & nutrition, survey data"),
+			        	h4("Kayla Tormohlen"),
+				tags$p(" Tuesdays, 1:30-3:30 pm, Wednesdays 11:30 am-12:30 pm"),
+				helpText("Areas of focus:Mental health, qualitative research, psychosocial methods, social & behavioral sciences"),
 				tags$hr()
 				
 			),

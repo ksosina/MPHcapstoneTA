@@ -13,42 +13,42 @@ token <- readRDS("scristia-droptoken.rds")
 
 ## Options
 TAchoices <- list(
-	"Monday" = c("Choose a TA", "Danielle Edwards" = "Danielle", "Youssef Farag" = "Youssef"),
-	"Tuesday" = c("Choose a TA", "Stephen Cristiano" = "Stephen", "Danielle Edwards" = "Danielle"),
-	"Wednesday" = c("Choose a TA", "Molly Lasater" = "Molly", "Youssef Farag" = "Youssef"),
-	"Thursday" = c("Choose a TA", "Danielle Edwards" = "Danielle"),
-	"Friday" = c("Choose a TA", "Youssef Farag" = "Youssef", "Stephen Cristiano" = "Stephen", "Molly Lasater" = "Molly")
+	"Monday" = c("Choose a TA", "Jordan Johns" = "Jordan", "Daniel Antiporta Penaloza" = "Daniel"),
+	"Tuesday" = c("Choose a TA", "Jordan Johns" = "Jordan", "Kayla Tormohlen"= "Kayla"),
+	"Wednesday" = c("Choose a TA",  "Hojoon Lee" = "Hojoon", "Kayla Tormohlen"= "Kayla"),
+	"Thursday" = c("Choose a TA", "Hojoon Lee" = "Hojoon"),
+	"Friday" = c("Choose a TA")
 )
 
 TAhour <- list(
-	"Youssef" = list(
-		"Monday" = c("16:30-17:00", "17:00-17:30", "17:30-18:00", "18:00-18:30"),
-		"Tuesday" = "00:00",
-		"Wednesday" = "00:00",
-		"Thursday" = "00:00",
-		"Friday" = c("14:30-15:00", "15:00-15:30", "15:30-16:00", "16:00-16:30")
-	),
-	"Stephen" = list(
-		"Monday" = "00:00",
-		"Tuesday" = c("13:30-14:00", "14:00-14:30", "14:30-15:00", "15:00-15:30"),
-		"Wednesday" = "00:00",
-		"Thursday" = "00:00",
-		"Friday" = c("13:30-14:00", "14:00-14:30", "14:30-15:00", "15:00-15:30")
-	),
-	"Danielle" = list(
-		"Monday" = c("10:45-11:15", "11:15-11:45", "13:20-13:50", "13:50-14:20"),
+	"Jordan" = list(
+		"Monday" = c("15:00-15:30", "15:30-16:00", "16:00-16:30", "16:30-17:00"),
 		"Tuesday" = c("13:00-13:30", "13:30-14:00", "14:00-14:30", "14:30-15:00"),
+		"Wednesday" ="00:00",
+		"Thursday" = "00:00",
+		"Friday" =  "00:00"
+	),
+	"Daniel" = list(
+		"Monday" = c("13:00-13:30, 13:30-14:00", "14:00-14:30", "14:30-15:00", "15:00-15:30", "15:30-16:00", "16:00-16:30", "16:30-17:00"),
+		"Tuesday" = "00:00",
 		"Wednesday" = "00:00",
 		"Thursday" = "00:00",
 		"Friday" = "00:00"
 	),
-	"Molly" = list(
+	"Hojoon" = list(
 		"Monday" = "00:00",
 		"Tuesday" ="00:00",
-		"Wednesday" = c("12:00-12:30", "12:30-13:00", "13:00-13:30", "13:30-14:00"),
-		"Thursday" = "00:00",
-		"Friday" = c("10:00-10:30", "10:30-11:00", "11:00-11:30", "11:30-12:00")
+		"Wednesday" =  c("12:00-12:30", "12:30-13:00", "13:00-13:30", "13:30-14:00"),
+		"Thursday" =  c("15:00-15:30", "15:30-16:00", "16:00-16:30", "16:30-17:00"),
+		"Friday" = "00:00"
 	),
+	"Kayla" = list(
+	  "Monday" = "00:00",
+	  "Tuesday" = c("13:30-14:00", "14:00-14:30", "14:30-15:00", "15:00-15:30"),
+	  "Wednesday" =  c("10:30-11:00","11:00-11:30", "11:30-12:00", "12:00-12:30"),
+	  "Thursday" = "00:00",
+	  "Friday" = "00:00"
+	),	
 	"Choose a TA" = list("Monday" = "00:00", "Tuesday" = "00:00", "Wednesday" = "00:00", "Thursday" = "00:00", "Friday" = "00:00")
 )
 
@@ -56,14 +56,15 @@ TAhour <- list(
 drop_get("github/MPHcapstoneTA/reservations.Rdata", overwrite = TRUE, dtoken = token)
 drop_get("github/mphcapstoneta/www/publicCalendar.ics", local_file = "www/publicCalendar.ics", overwrite = TRUE, dtoken = token)
 drop_get("github/mphcapstoneta/www/publicCalendar-Stephen.ics", local_file = "www/publicCalendar-Stephen.ics", overwrite = TRUE, dtoken = token)
-drop_get("github/mphcapstoneta/www/publicCalendar-Molly.ics", local_file = "www/publicCalendar-Molly.ics", overwrite = TRUE, dtoken = token)
-drop_get("github/mphcapstoneta/www/publicCalendar-Youssef.ics", local_file = "www/publicCalendar-Youssef.ics", overwrite = TRUE, dtoken = token)
-drop_get("github/mphcapstoneta/www/publicCalendar-Danielle.ics", local_file = "www/publicCalendar-Danielle.ics", overwrite = TRUE, dtoken = token)
+drop_get("github/mphcapstoneta/www/publicCalendar-Jordan.ics", local_file = "www/publicCalendar-Jordan.ics", overwrite = TRUE, dtoken = token)
+drop_get("github/mphcapstoneta/www/publicCalendar-Hojoon.ics", local_file = "www/publicCalendar-Hojoon.ics", overwrite = TRUE, dtoken = token)
+drop_get("github/mphcapstoneta/www/publicCalendar-Kayla.ics", local_file = "www/publicCalendar-Kayla.ics", overwrite = TRUE, dtoken = token)
+drop_get("github/mphcapstoneta/www/publicCalendar-Daniel.ics", local_file = "www/publicCalendar-Daniel.ics", overwrite = TRUE, dtoken = token)
 
 ## Save reservations
 saveRes <- function(reservations, file = 'reservations.Rdata', dest = "github/MPHcapstoneTA") {
     save(reservations, file = file)
-    drop_upload(file, dest = dest, dtoken = token)
+    drop_upload(file, path = dest, dtoken = token)
 }
 
 reservationsHist <- drop_history('github/mphcapstoneta/reservations.rdata', dtoken = token)
@@ -213,7 +214,7 @@ calendarBuild <- function(file, reservations, public=TRUE) {
 	cat("END:VCALENDAR")
 	cat("\n")
 	sink()
-    drop_upload(file, dest = "github/MPHcapstoneTA/www", dtoken = token)
+    drop_upload(file, path = "github/MPHcapstoneTA/www", dtoken = token)
 }
 
 
@@ -263,7 +264,10 @@ confirmEmail <- function(from, to, subject, msg) {
 	
   msg <- gsub("\n", "\\\\n", msg)
   msg <- gsub("\"|'", "*", msg)
-  send_gmail(subject = subject, body = msg, to = to, dir_private = ".")
+
+  ## works locally but not from deployed app.
+  ## Looks to be issue with Google's security measures
+  ##send_gmail(subject = subject, body = msg, to = as.character(to), dir_private = ".")
   return("\n")
 }
 

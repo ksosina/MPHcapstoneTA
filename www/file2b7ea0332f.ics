@@ -2,495 +2,387 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//JHSPH//MPHcapstone//EN
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Po-Yang Tsou Location Wolfe W2033 
+SUMMARY: Po-Yang Tsou ptsou1@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170130T091200
 DTSTART;TZID=US/Eastern:20170203T143000
 DTEND;TZID=US/Eastern:20170203T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Md Sohel Rana Location Wolfe W2033 
+SUMMARY: Md Sohel Rana mrana5@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170130T091600
 DTSTART;TZID=US/Eastern:20170203T150000
 DTEND;TZID=US/Eastern:20170203T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Jessica Magenwirth Location Wolfe W2009 
+SUMMARY: Jessica Magenwirth jessica.magenwirth@jhu.edu jessi.ma. 1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170130T091900
 DTSTART;TZID=US/Eastern:20170206T163000
 DTEND;TZID=US/Eastern:20170206T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Carolyn Tieu Location Wolfe W2033 
+SUMMARY: Carolyn Tieu ctieu1@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170130T115200
 DTSTART;TZID=US/Eastern:20170203T153000
 DTEND;TZID=US/Eastern:20170203T160000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Spencer Location Wolfe W2033 
+SUMMARY: Spencer spencer.david.fuller@gmail.com  1. MPH Customized Program of Study Wolfe W2033 
 DTSTAMP:20170130T124100
 DTSTART;TZID=US/Eastern:20170203T160000
 DTEND;TZID=US/Eastern:20170203T163000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Isaac Dodd Location Wolfe W2009 
+SUMMARY: Isaac Dodd imedodd@gmail.com IsaacMDodd 3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170130T135000
 DTSTART;TZID=US/Eastern:20170206T180000
 DTEND;TZID=US/Eastern:20170206T183000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Saranya Seetharaman Location Wolfe W2009 
+SUMMARY: Saranya Seetharaman sseetha4@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170131T163700
 DTSTART;TZID=US/Eastern:20170206T173000
 DTEND;TZID=US/Eastern:20170206T180000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Md Sohel Rana Location Wolfe W2033 
+SUMMARY: Md Sohel Rana mrana5@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170204T005400
 DTSTART;TZID=US/Eastern:20170210T143000
 DTEND;TZID=US/Eastern:20170210T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Riddhi Babel Location Wolfe W2033 
+SUMMARY: Riddhi Babel rbabel1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170206T153500
 DTSTART;TZID=US/Eastern:20170210T150000
 DTEND;TZID=US/Eastern:20170210T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Atul Aravindakshan Location Wolfe W2033 
+SUMMARY: Atul Aravindakshan aaravin1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170206T185300
 DTSTART;TZID=US/Eastern:20170210T160000
 DTEND;TZID=US/Eastern:20170210T163000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Meredith Lu Location Wolfe W2009 
+SUMMARY: Meredith Lu meredithlu@jhu.edu  6. Health in Crisis & Humanitarian Assistance Wolfe W2009 
 DTSTAMP:20170207T111200
 DTSTART;TZID=US/Eastern:20170213T163000
 DTEND;TZID=US/Eastern:20170213T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Monika Kochar Location Wolfe W2009 
+SUMMARY: Monika Kochar mkochar1@jhu.edu  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170207T120400
 DTSTART;TZID=US/Eastern:20170213T173000
 DTEND;TZID=US/Eastern:20170213T180000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Zuyi Location Wolfe W2009 
+SUMMARY: Zuyi zuyizhu@jhu.edu  10. Social & Behavioral Sciences in Public Health Wolfe W2009 
 DTSTAMP:20170208T084800
 DTSTART;TZID=US/Eastern:20170213T170000
 DTEND;TZID=US/Eastern:20170213T173000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Weijia Wang Location Wolfe W2009 
+SUMMARY: Weijia Wang weijiawang87@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170209T103700
 DTSTART;TZID=US/Eastern:20170213T180000
 DTEND;TZID=US/Eastern:20170213T183000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Meredith Location Wolfe W2033 
+SUMMARY: Meredith meredithlu@jhu.edu  6. Health in Crisis & Humanitarian Assistance Wolfe W2033 
 DTSTAMP:20170213T192200
 DTSTART;TZID=US/Eastern:20170217T143000
 DTEND;TZID=US/Eastern:20170217T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Zyleen Kassamali Location Wolfe W2033 
+SUMMARY: Zyleen Kassamali zyleen4@gmail.com  1. MPH Customized Program of Study Wolfe W2033 
 DTSTAMP:20170213T192200
 DTSTART;TZID=US/Eastern:20170217T153000
 DTEND;TZID=US/Eastern:20170217T160000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Tori Location Wolfe W2009 
+SUMMARY: Tori thicks@jhu.edu  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170217T094100
 DTSTART;TZID=US/Eastern:20170220T163000
 DTEND;TZID=US/Eastern:20170220T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Phuong T Tran Location Wolfe W2033 
+SUMMARY: Phuong T Tran ptran20@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170218T214600
 DTSTART;TZID=US/Eastern:20170224T143000
 DTEND;TZID=US/Eastern:20170224T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Jiajia Zhang Location Wolfe W2009 
+SUMMARY: Jiajia Zhang zhangjiajia2020@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170220T102700
 DTSTART;TZID=US/Eastern:20170227T163000
 DTEND;TZID=US/Eastern:20170227T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Meredith Location Wolfe W2033 
+SUMMARY: Meredith meredithlu@jhu.edu  6. Health in Crisis & Humanitarian Assistance Wolfe W2033 
 DTSTAMP:20170221T161500
 DTSTART;TZID=US/Eastern:20170224T150000
 DTEND;TZID=US/Eastern:20170224T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Carolyn Arnold Location Wolfe W2009 
+SUMMARY: Carolyn Arnold carolynarnold@jhmi.edu  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170223T094000
 DTSTART;TZID=US/Eastern:20170227T170000
 DTEND;TZID=US/Eastern:20170227T173000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Dena Seabrook Location Wolfe W2033 
+SUMMARY: Dena Seabrook dseabro1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170223T112300
 DTSTART;TZID=US/Eastern:20170224T160000
 DTEND;TZID=US/Eastern:20170224T163000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Meredith Location Wolfe W2009 
+SUMMARY: Meredith meredithlu@jhu.edu  6. Health in Crisis & Humanitarian Assistance Wolfe W2009 
 DTSTAMP:20170224T172700
 DTSTART;TZID=US/Eastern:20170227T173000
 DTEND;TZID=US/Eastern:20170227T180000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Adebamike Oshunbade Location Wolfe W2009 
+SUMMARY: Adebamike Oshunbade aoshunb1@jhmi.edu  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170226T120900
 DTSTART;TZID=US/Eastern:20170227T180000
 DTEND;TZID=US/Eastern:20170227T183000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Youssef Location Wolfe W2033 
+SUMMARY: Youssef yfarag@jhu.edu  1. MPH Customized Program of Study Wolfe W2033 
 DTSTAMP:20170227T150700
 DTSTART;TZID=US/Eastern:20170303T143000
 DTEND;TZID=US/Eastern:20170303T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Youssef Location Wolfe W2033 
+SUMMARY: Youssef yfarag@msn.com  1. MPH Customized Program of Study Wolfe W2033 
 DTSTAMP:20170227T150800
 DTSTART;TZID=US/Eastern:20170303T150000
 DTEND;TZID=US/Eastern:20170303T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Youssef Location Wolfe W2033 
+SUMMARY: Youssef yfarag1@jh.edu  1. MPH Customized Program of Study Wolfe W2033 
 DTSTAMP:20170227T150900
 DTSTART;TZID=US/Eastern:20170303T153000
 DTEND;TZID=US/Eastern:20170303T160000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Madhuli Thakkar Location Wolfe W2009 
+SUMMARY: Madhuli Thakkar madhuli.thakkar@gmail.com  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170227T162500
 DTSTART;TZID=US/Eastern:20170306T163000
 DTEND;TZID=US/Eastern:20170306T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Madhuli Thakkar Location Wolfe W2009 
+SUMMARY: Madhuli Thakkar mthakka1@jhu.edu  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170227T162600
 DTSTART;TZID=US/Eastern:20170306T163000
 DTEND;TZID=US/Eastern:20170306T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Phuong T Tran Location Wolfe W2033 
+SUMMARY: Phuong T Tran ptran20@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170227T212600
 DTSTART;TZID=US/Eastern:20170303T160000
 DTEND;TZID=US/Eastern:20170303T163000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Phuong T Tran Location Wolfe W2009 
+SUMMARY: Phuong T Tran ptran20@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170304T100500
 DTSTART;TZID=US/Eastern:20170306T170000
 DTEND;TZID=US/Eastern:20170306T173000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Grace Baffoe Location Wolfe W2009 
+SUMMARY: Grace Baffoe gbaffoe1@gmail.com  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170306T174200
 DTSTART;TZID=US/Eastern:20170313T163000
 DTEND;TZID=US/Eastern:20170313T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Benedicta arhinful Location Hampton B14B 
+SUMMARY: Benedicta arhinful barhinf1@jhu.edu  1. MPH Customized Program of Study Hampton B14B 
 DTSTAMP:20170306T181700
 DTSTART;TZID=US/Eastern:20170310T143000
 DTEND;TZID=US/Eastern:20170310T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Carolyn Arnold Location Hampton B14B 
+SUMMARY: Carolyn Arnold carolynarnold@jhmi.edu  1. MPH Customized Program of Study Hampton B14B 
 DTSTAMP:20170307T130600
 DTSTART;TZID=US/Eastern:20170310T150000
 DTEND;TZID=US/Eastern:20170310T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Phuong T Tran Location Wolfe W2033 
+SUMMARY: Phuong T Tran ptran20@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170311T090200
 DTSTART;TZID=US/Eastern:20170317T143000
 DTEND;TZID=US/Eastern:20170317T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Youssef Farag Location Wolfe W2009 
+SUMMARY: Youssef Farag yfarag@msn.com  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170314T003900
 DTSTART;TZID=US/Eastern:20170320T163000
 DTEND;TZID=US/Eastern:20170320T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Youssef Location Wolfe W2009 
+SUMMARY: Youssef yfarag@jhu.edu  2. Child & Adolescent Health Wolfe W2009 
 DTSTAMP:20170314T004100
 DTSTART;TZID=US/Eastern:20170320T170000
 DTEND;TZID=US/Eastern:20170320T173000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Spring break Location Wolfe W2009 
+SUMMARY: Spring break yfarag@jh.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170314T004100
 DTSTART;TZID=US/Eastern:20170320T173000
 DTEND;TZID=US/Eastern:20170320T180000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Spring break Location Wolfe W2009 
+SUMMARY: Spring break yfarag@ms.com  2. Child & Adolescent Health Wolfe W2009 
 DTSTAMP:20170314T004200
 DTSTART;TZID=US/Eastern:20170320T180000
 DTEND;TZID=US/Eastern:20170320T183000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Spring Break Location Wolfe W2033 
+SUMMARY: Spring Break yfarag@msn.com  1. MPH Customized Program of Study Wolfe W2033 
 DTSTAMP:20170317T130400
 DTSTART;TZID=US/Eastern:20170324T143000
 DTEND;TZID=US/Eastern:20170324T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Spring Break Location Wolfe W2033 
+SUMMARY: Spring Break yfarag@jhu.edu  1. MPH Customized Program of Study Wolfe W2033 
 DTSTAMP:20170317T130500
 DTSTART;TZID=US/Eastern:20170324T150000
 DTEND;TZID=US/Eastern:20170324T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Spring Break. Location Wolfe W2033 
+SUMMARY: Spring Break. yfarag@ms.com  2. Child & Adolescent Health Wolfe W2033 
 DTSTAMP:20170317T130600
 DTSTART;TZID=US/Eastern:20170324T153000
 DTEND;TZID=US/Eastern:20170324T160000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Spring Break.. Location Wolfe W2033 
+SUMMARY: Spring Break.. yfarag@jh.edu  2. Child & Adolescent Health Wolfe W2033 
 DTSTAMP:20170317T130600
 DTSTART;TZID=US/Eastern:20170324T160000
 DTEND;TZID=US/Eastern:20170324T163000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Daniel Radwan Location Wolfe W2009 
+SUMMARY: Daniel Radwan dradwan1@jhu.edu  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170324T004300
 DTSTART;TZID=US/Eastern:20170327T163000
 DTEND;TZID=US/Eastern:20170327T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Tori Location Wolfe W2009 
+SUMMARY: Tori thicks@jhu.edu  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170324T150600
 DTSTART;TZID=US/Eastern:20170327T180000
 DTEND;TZID=US/Eastern:20170327T183000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Atul Aravindakshan Location Wolfe W2009 
+SUMMARY: Atul Aravindakshan aaravin1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170324T171200
 DTSTART;TZID=US/Eastern:20170327T170000
 DTEND;TZID=US/Eastern:20170327T173000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Phuong T Tran Location Wolfe W2033 
+SUMMARY: Phuong T Tran ptran20@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170326T154300
 DTSTART;TZID=US/Eastern:20170331T150000
 DTEND;TZID=US/Eastern:20170331T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Jiajia Zhang Location Wolfe W2009 
+SUMMARY: Jiajia Zhang zhangjiajia2020@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170327T073400
 DTSTART;TZID=US/Eastern:20170403T163000
 DTEND;TZID=US/Eastern:20170403T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Saranya Seetharaman Location Wolfe W2033 
+SUMMARY: Saranya Seetharaman seetha4@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170327T155600
 DTSTART;TZID=US/Eastern:20170331T143000
 DTEND;TZID=US/Eastern:20170331T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Danielle Jungst Location Wolfe W2009 
+SUMMARY: Danielle Jungst djungst1@jhu.edu  8. Health Systems & Policy Wolfe W2009 
 DTSTAMP:20170328T083000
 DTSTART;TZID=US/Eastern:20170403T173000
 DTEND;TZID=US/Eastern:20170403T180000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Ming Liu Location Wolfe W2033 
+SUMMARY: Ming Liu Ming.liu92@gmail.com  6. Health in Crisis & Humanitarian Assistance Wolfe W2033 
 DTSTAMP:20170328T093600
 DTSTART;TZID=US/Eastern:20170331T153000
 DTEND;TZID=US/Eastern:20170331T160000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Zyleen Kassamali Location Wolfe W2009 
+SUMMARY: Zyleen Kassamali zyleen4@gmail.com  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20170328T135000
 DTSTART;TZID=US/Eastern:20170403T170000
 DTEND;TZID=US/Eastern:20170403T173000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Atul Aravindakshan Location Wolfe W2033 
+SUMMARY: Atul Aravindakshan aaravin1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170331T165700
 DTSTART;TZID=US/Eastern:20170407T150000
 DTEND;TZID=US/Eastern:20170407T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Md Sohel Rana Location Wolfe W2009 
+SUMMARY: Md Sohel Rana mrana5@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20170331T194100
 DTSTART;TZID=US/Eastern:20170403T180000
 DTEND;TZID=US/Eastern:20170403T183000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Saranya Seetharaman Location Wolfe W2033 
+SUMMARY: Saranya Seetharaman sseetha4@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170402T120800
 DTSTART;TZID=US/Eastern:20170407T143000
 DTEND;TZID=US/Eastern:20170407T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Youssef has PhD Oral Exam Location Wolfe W2009 
+SUMMARY: Youssef has PhD Oral Exam yfarag@msn.com  2. Child & Adolescent Health Wolfe W2009 
 DTSTAMP:20170402T173400
 DTSTART;TZID=US/Eastern:20170410T163000
 DTEND;TZID=US/Eastern:20170410T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Youssef has PhD Oral Exam Location Wolfe W2009 
+SUMMARY: Youssef has PhD Oral Exam yfarag@jhu.edu  5. Global Environmental Sustainability & Health Wolfe W2009 
 DTSTAMP:20170402T173400
 DTSTART;TZID=US/Eastern:20170410T170000
 DTEND;TZID=US/Eastern:20170410T173000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Youssef has PhD Oral Exam Location Wolfe W2009 
+SUMMARY: Youssef has PhD Oral Exam yfarag@sn.com  2. Child & Adolescent Health Wolfe W2009 
 DTSTAMP:20170402T173500
 DTSTART;TZID=US/Eastern:20170410T173000
 DTEND;TZID=US/Eastern:20170410T180000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Ming Liu Location Wolfe W2033 
+SUMMARY: Ming Liu ming.liu92@gmail.com  6. Health in Crisis & Humanitarian Assistance Wolfe W2033 
 DTSTAMP:20170403T002200
 DTSTART;TZID=US/Eastern:20170407T153000
 DTEND;TZID=US/Eastern:20170407T160000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Phuong T Tran Location Wolfe W2033 
+SUMMARY: Phuong T Tran ptran20@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170403T163300
 DTSTART;TZID=US/Eastern:20170407T160000
 DTEND;TZID=US/Eastern:20170407T163000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Youssef has PhD Oral Exam	 Location Wolfe W2009 
+SUMMARY: Youssef has PhD Oral Exam	 yfarag@sn.com  2. Child & Adolescent Health Wolfe W2009 
 DTSTAMP:20170405T194800
 DTSTART;TZID=US/Eastern:20170410T180000
 DTEND;TZID=US/Eastern:20170410T183000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Mohammed abusamaan Location Wolfe W2033 
+SUMMARY: Mohammed abusamaan mabusamaan@jhmi.edu  1. MPH Customized Program of Study Wolfe W2033 
 DTSTAMP:20170406T232200
 DTSTART;TZID=US/Eastern:20170414T153000
 DTEND;TZID=US/Eastern:20170414T160000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Saranya Seetharaman Location Wolfe W2033 
+SUMMARY: Saranya Seetharaman sseetha4@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170408T104700
 DTSTART;TZID=US/Eastern:20170414T160000
 DTEND;TZID=US/Eastern:20170414T163000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Youssef Student Atul Aravindakshan Location Wolfe W2033 
+SUMMARY: Atul Aravindakshan aaravin1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2033 
 DTSTAMP:20170408T110100
 DTSTART;TZID=US/Eastern:20170414T150000
 DTEND;TZID=US/Eastern:20170414T153000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Akachimere Uzosike Location Wolfe W2033 
-DTSTAMP:20170409T234300
-DTSTART;TZID=US/Eastern:20170414T143000
-DTEND;TZID=US/Eastern:20170414T150000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Angel Robinson Location Wolfe W2009 
-DTSTAMP:20170413T100300
-DTSTART;TZID=US/Eastern:20170417T163000
-DTEND;TZID=US/Eastern:20170417T170000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Ashish Location Wolfe W2009 
-DTSTAMP:20170413T163000
-DTSTART;TZID=US/Eastern:20170417T170000
-DTEND;TZID=US/Eastern:20170417T173000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Nivedita Meethan Location Wolfe W2009 
-DTSTAMP:20170415T011300
-DTSTART;TZID=US/Eastern:20170417T173000
-DTEND;TZID=US/Eastern:20170417T180000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Benedicta Arhinful Location Wolfe W2009 
-DTSTAMP:20170415T194200
-DTSTART;TZID=US/Eastern:20170417T180000
-DTEND;TZID=US/Eastern:20170417T183000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Madhuli Thakkar Location Wolfe W2009 
-DTSTAMP:20170416T214400
-DTSTART;TZID=US/Eastern:20170424T163000
-DTEND;TZID=US/Eastern:20170424T170000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Mohammed Abusamaan Location Wolfe W2033 
-DTSTAMP:20170417T115800
-DTSTART;TZID=US/Eastern:20170421T143000
-DTEND;TZID=US/Eastern:20170421T150000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Youssef needs to leave early just today Location Wolfe W2033 
-DTSTAMP:20170418T114800
-DTSTART;TZID=US/Eastern:20170421T160000
-DTEND;TZID=US/Eastern:20170421T163000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Atul Aravindakshan Location Wolfe W2033 
-DTSTAMP:20170418T115700
-DTSTART;TZID=US/Eastern:20170421T150000
-DTEND;TZID=US/Eastern:20170421T153000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Carolina Salmeron Location Wolfe W2033 
-DTSTAMP:20170418T180200
-DTSTART;TZID=US/Eastern:20170421T153000
-DTEND;TZID=US/Eastern:20170421T160000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Saranya Seetharaman Location Wolfe W2009 
-DTSTAMP:20170420T162400
-DTSTART;TZID=US/Eastern:20170424T170000
-DTEND;TZID=US/Eastern:20170424T173000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Carolina Salmeron Location Wolfe W2033 
-DTSTAMP:20170424T152000
-DTSTART;TZID=US/Eastern:20170428T143000
-DTEND;TZID=US/Eastern:20170428T150000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Atul Aravindakshan Location Wolfe W2033 
-DTSTAMP:20170426T175100
-DTSTART;TZID=US/Eastern:20170428T150000
-DTEND;TZID=US/Eastern:20170428T153000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Afifah Handayani Location Wolfe W2033 
-DTSTAMP:20170427T104300
-DTSTART;TZID=US/Eastern:20170428T153000
-DTEND;TZID=US/Eastern:20170428T160000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Nivedita Meethan Location Wolfe W2009 
-DTSTAMP:20170428T135500
-DTSTART;TZID=US/Eastern:20170501T163000
-DTEND;TZID=US/Eastern:20170501T170000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Nivedita Meethan Location Wolfe W2009 
-DTSTAMP:20170428T135500
-DTSTART;TZID=US/Eastern:20170501T163000
-DTEND;TZID=US/Eastern:20170501T170000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Ashish Location Wolfe W2009 
-DTSTAMP:20170428T140900
-DTSTART;TZID=US/Eastern:20170501T170000
-DTEND;TZID=US/Eastern:20170501T173000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Youssef Student Tori Hicks Location Wolfe W2009 
-DTSTAMP:20170428T141700
-DTSTART;TZID=US/Eastern:20170501T180000
-DTEND;TZID=US/Eastern:20170501T183000
 END:VEVENT
 END:VCALENDAR

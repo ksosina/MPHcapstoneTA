@@ -1,0 +1,11 @@
+Reservation details
+-------------------------------
+
+Dear Stephen, your *confirmed* office hour reservation is with TA Stephen on 2018-01-30 at 13:15-13:45. You have specified that your email is stephen.cristiano@gmail.com. Furthermore, you are not a distance student, and your MPH concentration is <1. MPH Customized Program of Study>.
+ The meeting will be at Wolfe W2033.
+
+Problem description:
+testing testing testing testing testing testing
+
+-------------------------------
+

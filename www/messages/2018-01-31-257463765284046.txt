@@ -1,0 +1,11 @@
+Reservation details
+-------------------------------
+
+Dear Stephen Cristiano, your *confirmed* office hour reservation is with TA Stephen on 2018-02-02 at 14:30-15:00. You have specified that your email is sc759@cornell.edu. Furthermore, you are not a distance student, and your MPH concentration is <1. MPH Customized Program of Study>.
+ The meeting will be at Wolfe W9514.
+
+Problem description:
+Testing the email function
+
+-------------------------------
+
