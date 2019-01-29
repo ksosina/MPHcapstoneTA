@@ -1,1 +1,42 @@
+]0;ksosina@DESKTOP-OSU46N0: /mnt/c/Users/kayod/Dropbox/GitHub/MPHcapstoneTA[0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/GitHub/MPHcapstoneTA[0m$[0K[74G[?25l[0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/GitHub/MPHcapstoneTA[0m$ R[0K[?25h[?25l
+[0K[?25h[?25l
+R version 3.5.1 (2018-07-02) -- "Feather Spray"[0K
+Copyright (C) 2018 The R Foundation for Statistical Computing[0K
+Platform: x86_64-pc-linux-gnu (64-bit)[0K
+[0K
+R is free software and comes with ABSOLUTELY NO WARRANTY.[0K
+You are welcome to redistribute it under certain conditions.[0K
+Type 'license()' or 'licence()' for distribution details.[0K
+[0K
+  Natural language support but running in an English locale[0K
+[0K
+R is a collaborative project with many contributors.[0K
+Type 'contributors()' for more information and[0K
+'citation()' on how to cite R or R packages in publications.[0K
+[0K
+Type 'demo()' for some demos, 'help()' for on-line help, or[0K
+'help.start()' for an HTML browser interface to help.[0K
+Type 'q()' to quit R.[0K
+[0K
+[Previously saved workspace restored][0K
+[0K
+[0K[?25h>[0K[3G[?25l> library("shiny")[0K
+[0K[?25h[?25l
+[0K[?25h> #library("sendmailR")[0K[?25l
+> #library("mail")[0K
+> library("mygmailR")[0K
+Error in library("mygmailR") : there is no package called ‘mygmailR’[0K
+> library("rdrop2")[0K
+Error in library("rdrop2") : there is no package called ‘rdrop2’[0K
+>[0K[3G[?25h[?25l> install.packages(c("devtools", "rJython", "rJava", "rjson"))[0K
+[0K[?25hInstalling packages into ‘/home/ksosina/R/x86_64-pc-linux-gnu-library/3.5’[0K[?25l
+(as ‘lib’ is unspecified)[0K
+[0K[?25hWarning: unable to access index for repository https://cloud.r-project.org/src/contrib:[0K[?25l
+  cannot open URL 'https://cloud.r-project.org/src/contrib/PACKAGES'[0K
+[0K[?25hWarning message:[0K[?25l
+packages ‘devtools’, ‘rJython’, ‘rJava’, ‘rjson’ are not available (for R version 3.5.1)[0K
+> library(devtools)[0K
+[0K[?25h> install_github("trinker/gmailR")[0K[?25l
+[0K[?25hError in curl::curl_fetch_memory(url, handle = h) :[0K[?25l
+  gnutls_handshake() failed: Error in the push function.[0K
 ]0;ksosina@DESKTOP-OSU46N0: /mnt/c/Users/kayod/Dropbox/GitHub/MPHcapstoneTA[0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/GitHub/MPHcapstoneTA[0m$[0K[74G
