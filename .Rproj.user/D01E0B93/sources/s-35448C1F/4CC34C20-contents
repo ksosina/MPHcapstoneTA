@@ -19,17 +19,30 @@ fluidPage(theme = shinytheme("darkly"),
               selectInput("weekday", "Weekday", c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")),	
               
               ## Choose TA
-              selectInput("ta", "TA", c("Choose a TA", "Prosenjit Kundu" = "Prosenjit", "Daniel Antiporta Penaloza" = "Daniel", "Hojoon Lee" = "Hojoon", "Kayla Tormohlen" = "Kayla", "Kayode Sosina" = "Kayode")),
+              selectInput("ta", "TA", c("Choose a TA", "Prosenjit Kundu" = "Prosenjit", "Daniel Antiporta Penaloza" = "Daniel", "Hojoon Lee" = "Hojoon", 
+                                        "Kayla Tormohlen" = "Kayla", "Kayode Sosina" = "Kayode", "Kellan Baker" = "Kellan")),
               
               #### TA info
+              
+              ## TA: Kellan
+              conditionalPanel(
+                condition = "input.ta == 'Kellan'",
+                
+                ## Area of focus
+                helpText("Areas of Focus: Health legal & Government policy, Policy analysis, Bioethics, Health care management, Grant proposals, Health economics, Economic evaluation."),
+                tags$hr(),
+                HTML("Available: Mondays & Wednesdays")
+              ),
+              
+              
               ## TA: Prosenjit
               conditionalPanel(
                 condition = "input.ta == 'Prosenjit'",
                 
                 ## Area of focus
-                helpText("Areas of focus: Biostatistics, meta-analysis, Stats-Genetics"),
+                helpText("Areas of Focus: Biostatistics, Statistical methods, Data integration, Genetic epidemiology."),
                 tags$hr(),
-                HTML("Available: Mondays & Tuesdays")
+                HTML("Available: Tuesdays & Fridays")
               ),
               
               ## TA: Kayode
@@ -37,9 +50,9 @@ fluidPage(theme = shinytheme("darkly"),
               		condition = "input.ta == 'Kayode'",
 
               		## Area of focus
-              		helpText("Areas of focus: Biostatistics, Stats-Genetics, Genomics"),
+              		helpText("Areas of focus: Biostatistics, Longitudinal data analysis, Survival analysis, Stats–genetics, Genomics."),
               		tags$hr(),
-              		HTML("Available: Tuesdays & Fridays")
+              		HTML("Available: Wednesdays & Tuesdays")
               	),
               
               ## TA: Hojoon
@@ -47,9 +60,9 @@ fluidPage(theme = shinytheme("darkly"),
                 condition = "input.ta == 'Hojoon'",
                 
                 ## Area of focus
-                helpText("Areas of focus: general epidemiology (methods, study design), public health surveillance, professional epidemiology methods, epidemiology implementation"),
+                helpText("Areas of focus: General epidemiology (methods, study design), Public health surveillance, Professional epidemiology methods, Epidemiology implementation, Literature reviews."),
                 tags$hr(),
-                HTML("Available: Wednesdays & Thursdays")
+                HTML("Available: Tuesdays & Wednesdays")
               ),
               
               ## TA: Daniel
@@ -57,9 +70,9 @@ fluidPage(theme = shinytheme("darkly"),
                 condition = "input.ta == 'Daniel'",
                 
                 ## Area of focus
-                helpText("Areas of focus: Epidemiological methods, health inequalities, food & nutrition, survey data"),
+                helpText("Areas of focus: Epidemiological methods, Social epidemiology, Health inequalities, Food & Nutrition, Survey data."),
                 tags$hr(),
-                HTML("Available: Mondays")
+                HTML("Available: Mondays & Wednesdays")
               ),
               
               ## TA: Kayla
@@ -67,9 +80,9 @@ fluidPage(theme = shinytheme("darkly"),
                 condition = "input.ta == 'Kayla'",
                 
                 ## Area of focus
-                helpText("Areas of focus: Mental health, qualitative research, psychosocial methods, social & behavioral sciences"),
+                helpText("Areas of focus: Mental health, Substance use, Qualitative research, Psychosocial methods, Social & Behavioral sciences, Health services research, Literature reviews."),
                 tags$hr(),
-                HTML("Available: Tuesdays & Wednesdays")
+                HTML("Available: Mondays & Fridays")
               ),
               
               ## Office hour
@@ -107,6 +120,7 @@ fluidPage(theme = shinytheme("darkly"),
               tags$hr(),
               h4("Final step"),
               selectInput("reserve", "Action to perform", c("", "Submit reservation", "Cancel reservation")),
+              # actionButton("goButton", "Submit"),
               helpText("Verify that you see the confirmation of your reservation/cancellation."),
               HTML("You must <a href='https://scristia.shinyapps.io/MPHcapstoneTA/'>reload the site</a> to perform another action.")
               
@@ -145,22 +159,25 @@ fluidPage(theme = shinytheme("darkly"),
                          HTML("<iframe src='https://calendar.google.com/calendar/embed?title=TA%20public%20calendar&amp;mode=AGENDA&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2pe2ni4o1topjo4v9dj0tknk68vn25oq%40import.calendar.google.com&amp;color=%238D6F47&amp;ctz=America%2FNew_York' style='border-width:0' width='600' height='300' frameborder='0' scrolling='no'></iframe>"),
                          helpText("Note that the calendar has a very slow refresh rate due to how Google Calendar works.")
                 ),			
-                tabPanel("TA info",				
+                tabPanel("TA info",
+                         h4("Kellan Baker"),
+                         tags$p("Office Hours: Monday 12:00-2:00 pm & Wednesday 3:00-6:00 pm"),
+                         helpText("Areas of focus: Health legal & Government policy, Policy analysis, Bioethics, Health care management, Grant proposals, Health economics, Economic evaluation."),
                          h4("Prosenjit Kundu"),
-                         tags$p(" Monday 3- 5 pm, Tuesday 1-3 pm"),
-                         helpText("Areas of focus: Biostatistics, meta-analysis, Stats-Genetics"),
+                         tags$p("Office Hours: Tuesday 1:15-3:15 pm & Friday 3:30-5:30 pm"),
+                         helpText("Areas of Focus: Biostatistics, Statistical methods, Data integration, Genetic epidemiology."),
                          h4("Kayode Sosina"),
-                         tags$p(" Monday 3- 5 pm, Tuesday 1-3 pm"),
-                         helpText("Areas of focus: Biostatistics, Stats-Genetics, Genomics"),
+                         tags$p("Office Hours: Tuesday 3:00-5:00 pm & Wednesday 1:00-3:00 pm"),
+                         helpText("Areas of focus: Biostatistics, Longitudinal data analysis, Survival analysis, Stats–genetics, Genomics."),
                          h4("Hojoon Lee"),
-                         tags$p(" Wednesday 12:00-2:00 pm, Thursday 3:00- 5:00 pm"),
-                         helpText("Areas of focus:general epidemiology (methods, study design), public health surveillance, professional epidemiology methods, epidemiology implementation"),
+                         tags$p("Office Hours: Tuesday 12:00-2:00 pm & Wednesday 1:30-3:30 pm"),
+                         helpText("Areas of focus: General epidemiology (methods, study design), Public health surveillance, Professional epidemiology methods, Epidemiology implementation, Literature reviews."),
                          h4("Daniel Antiporta Penaloza"),
-                         tags$p(" Monday 1:00-5:00 pm, Tuesday 3:10-5:10 pm"),
-                         helpText("Areas of focus: Epidemiological methods, health inequalities, food & nutrition, survey data"),
+                         tags$p("Office Hours: Monday 1:30-3:30 pm & Wednesday 1:30-3:30 pm"),
+                         helpText("Areas of focus: Epidemiological methods, Social epidemiology, Health inequalities, Food & Nutrition, Survey data."),
                          h4("Kayla Tormohlen"),
-                         tags$p(" Tuesdays, 1:30-3:30 pm, Wednesdays 11:30 am-12:30 pm"),
-                         helpText("Areas of focus:Mental health, qualitative research, psychosocial methods, social & behavioral sciences"),
+                         tags$p("Office Hours: Monday 2:30-4:30 pm & Friday 12:30-2:30 pm"),
+                         helpText("Areas of focus: Mental health, Substance use, Qualitative research, Psychosocial methods, Social & Behavioral sciences, Health services research, Literature reviews."),
                          tags$hr()
                          
                 ),

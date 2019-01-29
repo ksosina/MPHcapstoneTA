@@ -11,8 +11,11 @@ if(!file.exists("TAroom.Rdata")){
 
 # TA's and their emails
 if(!file.exists("taemails.Rdata")){
-  taemails <- data.frame("emails" = letters[1:5], "ta" = c("Prosenjit", "Kayode", "Daniel", "Hojoon", "Kayla"))
-  save(tapass, file = "taemails.Rdata")
+  taemails <- data.frame("emails" = c("pkundu@jhu.edu", "ksosina1@jhu.edu",
+                                      "dantiporta@jhu.edu", "hojoon.lee@jhu.edu",
+                                      "ktormoh1@jhu.edu", "kbaker39@jhu.edu"), 
+                         "ta" = c("Prosenjit", "Kayode", "Daniel", "Hojoon", "Kayla", "Kellan"))
+  save(taemails, file = "taemails.Rdata")
 }
 
 
@@ -22,3 +25,5 @@ if(!file.exists("droptoken.rds")){
   token <- drop_auth()
   saveRDS(token, file = "droptoken.rds")
 }
+
+

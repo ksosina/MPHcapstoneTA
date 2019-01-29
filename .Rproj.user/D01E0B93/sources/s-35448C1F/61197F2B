@@ -4,16 +4,16 @@
     "created" : 1548259028510.000,
     "dirty" : false,
     "encoding" : "UTF-8",
-    "folds" : "236|73|267|0|\n",
-    "hash" : "487932906",
+    "folds" : "150|34|169|0|\n232|30|245|0|\n280|73|311|0|\n",
+    "hash" : "0",
     "id" : "61197F2B",
-    "lastKnownWriteTime" : 1548270252,
-    "last_content_update" : 1548272451041,
+    "lastKnownWriteTime" : 1548729652,
+    "last_content_update" : 1548729904259,
     "path" : "C:/Users/kayod/Dropbox/GitHub/MPHcapstoneTA/server.R",
     "project_path" : "server.R",
     "properties" : {
-        "cursorPosition" : "78,0",
-        "scrollLine" : "71"
+        "cursorPosition" : "122,0",
+        "scrollLine" : "115"
     },
     "relative_order" : 4,
     "source_on_save" : false,
