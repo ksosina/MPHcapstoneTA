@@ -17,8 +17,8 @@ token <- readRDS("droptoken.rds")
 TAchoices <- list(
   "Monday" = c("Choose a TA", "Kellan Baker" = "Kellan", "Daniel Antiporta Penaloza" = "Daniel", "Kayla Tormohlen"= "Kayla"),
   "Tuesday" = c("Choose a TA", "Prosenjit Kundu" = "Prosenjit", "Hojoon Lee" = "Hojoon", "Kayode Sosina" = "Kayode"),
-  "Wednesday" = c("Choose a TA", "Kellan Baker" = "Kellan", "Hojoon Lee" = "Hojoon", "Kayode Sosina" = "Kayode", "Daniel Antiporta Penaloza" = "Daniel"),
-  "Thursday" = c("Choose a TA"),
+  "Wednesday" = c("Choose a TA", "Hojoon Lee" = "Hojoon", "Kayode Sosina" = "Kayode", "Daniel Antiporta Penaloza" = "Daniel"),
+  "Thursday" = c("Choose a TA", "Kellan Baker" = "Kellan"),
   "Friday" = c("Choose a TA", "Prosenjit Kundu" = "Prosenjit", "Kayla Tormohlen"= "Kayla")
 )
 
@@ -54,8 +54,8 @@ TAhour <- list(
   "Kellan" = list(
     "Monday" = c("12:00-12:30, 12:30-13:00", "13:00-13:30", "13:30-14:00"),
     "Tuesday" = "00:00",
-    "Wednesday" = c("15:00-15:30", "15:30-16:00", "16:00-16:30", "16:30-17:00", "17:00-17:30", "17:30-18:00"),
-    "Thursday" = "00:00",
+    "Wednesday" = "00:00",
+    "Thursday" = c("15:00-15:30", "15:30-16:00", "16:00-16:30", "16:30-17:00"),
     "Friday" = "00:00"
   ),
   "Kayla" = list(

@@ -38,13 +38,13 @@
 
 
 
-#### 2019
+#### 2019 (Update 1/29/2019)
 library(readxl)
 library(dplyr)
 #rooms <- read_excel("report - MPH Capstone TA office hours - revised.xlsx")
-rooms <- read_excel("report - MPH Capstone TA office hours - revised.xlsx")
+rooms <- read_excel("report - MPH Capstone TA office hours updated Daniel wednesdays.xlsx")
 rooms <- rooms %>% filter(complete.cases(rooms))
-rooms <- rooms %>% mutate(date=as.Date(`Start Date`, format="%m/%d/%Y", tz="America/New_York"))
+rooms <- rooms %>% mutate(date=as.Date(`Date`, format="%m/%d/%Y", tz="America/New_York"))
 rooms <- rooms %>% arrange(date)
 
 tas <- c("Kundu", "Sosina", "Antiporta", "Lee", "Tormohlen", "Baker") 

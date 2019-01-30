@@ -31,7 +31,7 @@ fluidPage(theme = shinytheme("darkly"),
                 ## Area of focus
                 helpText("Areas of Focus: Health legal & Government policy, Policy analysis, Bioethics, Health care management, Grant proposals, Health economics, Economic evaluation."),
                 tags$hr(),
-                HTML("Available: Mondays & Wednesdays")
+                HTML("Available: Mondays & Thursdays")
               ),
               
               
@@ -161,7 +161,7 @@ fluidPage(theme = shinytheme("darkly"),
                 ),			
                 tabPanel("TA info",
                          h4("Kellan Baker"),
-                         tags$p("Office Hours: Monday 12:00-2:00 pm & Wednesday 3:00-6:00 pm"),
+                         tags$p("Office Hours: Monday 12:00-2:00 pm & Thursday 3:00-5:00 pm"),
                          helpText("Areas of focus: Health legal & Government policy, Policy analysis, Bioethics, Health care management, Grant proposals, Health economics, Economic evaluation."),
                          h4("Prosenjit Kundu"),
                          tags$p("Office Hours: Tuesday 1:15-3:15 pm & Friday 3:30-5:30 pm"),
@@ -241,7 +241,7 @@ fluidPage(theme = shinytheme("darkly"),
                          dataTableOutput("recent"),
                          helpText("Requires password to display the information."),
                          h4("Download calendar"),
-                         selectInput("taname", "Select a TA", c("All", "Youssef", "Stephen", "Danielle", "Molly")),
+                         selectInput("taname", "Select a TA", c("All", "Prosenjit", "Kayode", "Daniel", "Hojoon", "Kayla", "Kellan")),
                          helpText("If you selected a TA, only the events for that TA will appear in the calendar."),
                          downloadButton('calendar', 'Download'),
                          helpText("TA password is required."),

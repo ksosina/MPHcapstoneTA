@@ -18,3 +18,10 @@ droptoken.rds
 rsconnect
 Old
 
+## Schedule files
+.xlsx
+
+
+## R History files
+.Rhistory
+
