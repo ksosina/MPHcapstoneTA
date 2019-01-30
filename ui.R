@@ -120,7 +120,7 @@ fluidPage(theme = shinytheme("darkly"),
               tags$hr(),
               h4("Final step"),
               selectInput("reserve", "Action to perform", c("", "Submit reservation", "Cancel reservation")),
-              # actionButton("goButton", "Submit"),
+              actionButton("goButton", "Submit"),
               helpText("Verify that you see the confirmation of your reservation/cancellation."),
               HTML("You must <a href='https://mphcapstoneta.shinyapps.io/mphcapstoneta/'>reload the site</a> to perform another action.")
               

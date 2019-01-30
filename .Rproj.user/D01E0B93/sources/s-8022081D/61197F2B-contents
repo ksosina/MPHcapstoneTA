@@ -284,7 +284,7 @@ buildEmail <- function(new, action="confirm", verbose=TRUE, email=TRUE) {
   
   msg <- paste0(msg, "\n\nProblem description:\n", new$Description)
   if(action=="confirm") {		
-    msgStudent <- paste0(msg, "\n\nIf for some reason you need to cancel your reservation (minimum 24 hrs notice), please do so through https://scristia.shinyapps.io/MPHcapstoneTA/. You will have to choose the TA, office hour, enter your name, email and MPH concentration (to verify your identity) in order to cancel.")
+    msgStudent <- paste0(msg, "\n\nIf for some reason you need to cancel your reservation (minimum 24 hrs notice), please do so through https://mphcapstoneta.shinyapps.io/mphcapstoneta/. You will have to choose the TA, office hour, enter your name, email and MPH concentration (to verify your identity) in order to cancel.")
     subject <- paste("New TA reservation:", as.character(as.Date(new$desiredDate, tz="America/New_York")), "at", new$officeHour)
   } else {
     subject <- paste("Cancelled TA reservation:", as.character(as.Date(new$desiredDate, tz="America/New_York")), "at", new$officeHour)
@@ -401,75 +401,83 @@ shinyServer(function(input, output, session) {
     #cat(paste(c("Entry status:", check)))			
   })
   
-  ## Entry submission
-  output$verification <- renderPrint({
-    new <- newEntry()
-    reservations <- loadReservations()
+  
+  observeEvent(input$goButton, {
     
-    check <- checkEntry(new, reservations, verbose=FALSE)
+    ## Entry submission
+    output$verification <- renderPrint({
+      new <- newEntry()
+      reservations <- loadReservations()
+      
+      check <- checkEntry(new, reservations, verbose=FALSE)
+      
+      
+      if(check == "Can cancel" & input$reserve %in% c("Cancel reservation", "Cancellation registered")) {
+        cat("Confirmation message:\n\n")
+        emailInfo <- buildEmail(new, "cancel")
+        if(input$reserve == "Cancel reservation") {
+          reservations <- loadReservationsFunc()
+          idx <- with(reservations, which(TA == new$TA & Student == new$Student & Email == new$Email & Distance == new$Distance & Skype == new$Skype & Concentration == new$Concentration & desiredDate == new$desiredDate))
+          reservations <- reservations[-idx, ]
+          
+          ## Update calendar
+          calendarBuild("www/publicCalendar.ics", reservations, TRUE)	
+          
+          ## Update TA-individual calendar
+          calendarBuild(paste0("www/publicCalendar-", new$TA, ".ics"), subset(reservations, TA == new$TA), TRUE)
+          
+          ## Send email				
+          conf <- confirmEmail(emailInfo$from, emailInfo$to, emailInfo$subject, emailInfo$msg)
+          #cat(conf)
+          
+          ## Create backup just in case
+          saveRes(reservations, file = file.path(".", paste0("reservations_backup-", gsub("\\s|:", "_", Sys.time()), ".Rdata")), dest =  file.path("Github", "MPHcapstoneTA", "mphcapstoneta", "backups"))
+          
+          ## Save changes
+          saveRes(reservations)
+          
+          ## Finish
+          updateSelectInput(session, "reserve", choices="Cancellation registered", selected="Cancellation registered")
+        }			
+        cat("\n\nYou have successfully cancelled your reservation. You can verify this on the 'Current reservations' tab: your reservation will no longer appear on the current slots taken.")
+        
+        
+        
+      } else if(check == "Complete" & input$reserve %in% c("Submit reservation", "Reservation submitted")) {
+        cat("Confirmation message:\n\n")
+        emailInfo <- buildEmail(new, "confirm")
+        if(input$reserve == "Submit reservation") {
+          reservations <- loadReservationsFunc()
+          reservations <- rbind(reservations, new)
+          
+          ## Update calendar
+          calendarBuild("www/publicCalendar.ics", reservations, TRUE)	
+          
+          ## Update TA-individual calendar
+          calendarBuild(paste0("www/publicCalendar-", new$TA, ".ics"), subset(reservations, TA == new$TA), TRUE)
+          
+          ## Send email				
+          conf <- confirmEmail(emailInfo$from, emailInfo$to, emailInfo$subject, emailInfo$msg)
+          #cat(conf)
+          
+          ## Create backup just in case
+          saveRes(reservations, file = file.path(".", paste0("reservations_backup-", gsub("\\s|:", "_", Sys.time()), ".Rdata")), dest = file.path("Github", "MPHcapstoneTA", "mphcapstoneta", "backups"))
+          
+          ## Save changes
+          saveRes(reservations)
+          
+          ## Finish
+          updateSelectInput(session, "reserve", choices="Reservation submitted", selected="Reservation submitted")
+        }	
+        cat("\n\nYou have successfully completed your office hour reservation. You can verify this on the 'Current reservations' tab: your reservation will appear on the current slots taken.")
+      } else if (input$reserve %in% c("Submit reservation", "Cancel reservation")) {
+        updateSelectInput(session, "reserve", choices=c("", "Submit reservation", "Cancel reservation"), selected = "")
+      }
+    })
     
-    if(check == "Can cancel" & input$reserve %in% c("Cancel reservation", "Cancellation registered")) {
-      cat("Confirmation message:\n\n")
-      emailInfo <- buildEmail(new, "cancel")
-      if(input$reserve == "Cancel reservation") {
-        reservations <- loadReservationsFunc()
-        idx <- with(reservations, which(TA == new$TA & Student == new$Student & Email == new$Email & Distance == new$Distance & Skype == new$Skype & Concentration == new$Concentration & desiredDate == new$desiredDate))
-        reservations <- reservations[-idx, ]
-        
-        ## Update calendar
-        calendarBuild("www/publicCalendar.ics", reservations, TRUE)	
-        
-        ## Update TA-individual calendar
-        calendarBuild(paste0("www/publicCalendar-", new$TA, ".ics"), subset(reservations, TA == new$TA), TRUE)
-        
-        ## Send email				
-        conf <- confirmEmail(emailInfo$from, emailInfo$to, emailInfo$subject, emailInfo$msg)
-        #cat(conf)
-        
-        ## Create backup just in case
-        saveRes(reservations, file = file.path(".", paste0("reservations_backup-", gsub("\\s|:", "_", Sys.time()), ".Rdata")), dest =  file.path("Github", "MPHcapstoneTA", "mphcapstoneta", "backups"))
-        
-        ## Save changes
-        saveRes(reservations)
-        
-        ## Finish
-        updateSelectInput(session, "reserve", choices="Cancellation registered", selected="Cancellation registered")
-      }			
-      cat("\n\nYou have successfully cancelled your reservation. You can verify this on the 'Current reservations' tab: your reservation will no longer appear on the current slots taken.")
-      
-      
-      
-    } else if(check == "Complete" & input$reserve %in% c("Submit reservation", "Reservation submitted")) {
-      cat("Confirmation message:\n\n")
-      emailInfo <- buildEmail(new, "confirm")
-      if(input$reserve == "Submit reservation") {
-        reservations <- loadReservationsFunc()
-        reservations <- rbind(reservations, new)
-        
-        ## Update calendar
-        calendarBuild("www/publicCalendar.ics", reservations, TRUE)	
-        
-        ## Update TA-individual calendar
-        calendarBuild(paste0("www/publicCalendar-", new$TA, ".ics"), subset(reservations, TA == new$TA), TRUE)
-        
-        ## Send email				
-        conf <- confirmEmail(emailInfo$from, emailInfo$to, emailInfo$subject, emailInfo$msg)
-        #cat(conf)
-        
-        ## Create backup just in case
-        saveRes(reservations, file = file.path(".", paste0("reservations_backup-", gsub("\\s|:", "_", Sys.time()), ".Rdata")), dest = file.path("Github", "MPHcapstoneTA", "mphcapstoneta", "backups"))
-        
-        ## Save changes
-        saveRes(reservations)
-        
-        ## Finish
-        updateSelectInput(session, "reserve", choices="Reservation submitted", selected="Reservation submitted")
-      }	
-      cat("\n\nYou have successfully completed your office hour reservation. You can verify this on the 'Current reservations' tab: your reservation will appear on the current slots taken.")
-    } else if (input$reserve %in% c("Submit reservation", "Cancel reservation")) {
-      updateSelectInput(session, "reserve", choices=c("", "Submit reservation", "Cancel reservation"), selected = "")
-    }
   })
+  
+  
   
   ## Create a link to the messsage for students to download
   output$message <- renderUI({
@@ -488,7 +496,7 @@ shinyServer(function(input, output, session) {
       sink(paste0("www/", confFile))
       cat(emailInfo$msg)
       sink()
-      HTML(paste0("Download <a href='https://scristia.shinyapps.io/MPHcapstoneTA/", confFile, "'>confirmation information</a>."))
+      HTML(paste0("Download <a href='https://mphcapstoneta.shinyapps.io/mphcapstoneta/", confFile, "'>confirmation information</a>."))
     } else{
       HTML("")	
     }
