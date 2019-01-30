@@ -122,7 +122,7 @@ fluidPage(theme = shinytheme("darkly"),
               selectInput("reserve", "Action to perform", c("", "Submit reservation", "Cancel reservation")),
               # actionButton("goButton", "Submit"),
               helpText("Verify that you see the confirmation of your reservation/cancellation."),
-              HTML("You must <a href='https://scristia.shinyapps.io/MPHcapstoneTA/'>reload the site</a> to perform another action.")
+              HTML("You must <a href='https://mphcapstoneta.shinyapps.io/mphcapstoneta/'>reload the site</a> to perform another action.")
               
             ),
             
@@ -231,7 +231,7 @@ fluidPage(theme = shinytheme("darkly"),
                          h4("Add the public calendar"),
                          helpText("You can add the public calendar to your client by either adding the public Google calendar from the 'Current reservations' tab (refresh rate is very slow) or using your own calendar application and choosing a high refresh rate."),
                          helpText("For example, in a Mac you can use the 'Calendar' app, then go to 'File' -> 'New calendar subscription ...' -> enter the calendar URL -> choose a refresh rate of every 5 (or 15) minutes."),
-                         HTML("<a href='https://scristia.shinyapps.io/MPHcapstoneTA/publicCalendar.ics'>Public calendar URL</a>."),
+                         HTML("<a href='https://mphcapstoneta.shinyapps.io/mphcapstoneta/publicCalendar.ics'>Public calendar URL</a>."),
                          h4("Enter the TA password"),
                          textInput("tapass", "TA password", ""),
                          h4("View details on recent reservations"),
