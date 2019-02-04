@@ -76,9 +76,9 @@ local_drpbx_dir <- file.path(".", "mphcapstoneta", "www")
 # # To use a stored token provide token location
 # drop_auth(rdstoken = "droptoken.rds")
 # Dropbox online file paths
-dropbx_file_locs <- file.path("GitHub", "MPHcapstoneTA", "mphcapstoneta", "www")
+dropbx_file_locs <- file.path("github", "mphcapstoneta", "mphcapstoneta", "www")
 
-drop_download(file.path("GitHub", "MPHcapstoneTA", "mphcapstoneta", "reservations.Rdata"), overwrite = TRUE, dtoken = token)
+drop_download(file.path("github", "mphcapstoneta", "reservations.Rdata"), overwrite = TRUE, dtoken = token)
 drop_download(file.path(dropbx_file_locs, "publicCalendar.ics"), local_path = file.path(local_drpbx_dir, "publicCalendar.ics"), overwrite = TRUE, dtoken = token)
 
 if(file.exists(file.path(dropbx_file_locs, "publicCalendar-Prosenjit.ics"))){
@@ -115,12 +115,12 @@ if(file.exists(file.path(dropbx_file_locs, "publicCalendar-Kellan.ics"))){
 # drop_download(file.path(dropbx_file_locs, "publicCalendar-Kellan.ics"), local_path = file.path(local_drpbx_dir, "publicCalendar-Kellan.ics"), overwrite = TRUE, dtoken = token)
 
 ## Save reservations
-saveRes <- function(reservations, file = './reservations.Rdata', dest = file.path("Github/MPHcapstoneTA/mphcapstoneta")) {
+saveRes <- function(reservations, file = './reservations.Rdata', dest = file.path("github/mphcapstoneta")) {
   save(reservations, file = file)
   drop_upload(file, path = dest, dtoken = token)
 }
 
-dropbox_reservation_file <- file.path("GitHub", "MPHcapstoneTA", 'mphcapstoneta', 'reservations.rdata')
+dropbox_reservation_file <- file.path("github", "mphcapstoneta", 'reservations.rdata')
 local_dropbox_reservation_file <- file.path('.', 'reservations.rdata')
 
 reservationsHist <- drop_history(dropbox_reservation_file, limit = 10, dtoken = token)
@@ -201,13 +201,18 @@ checkEntry <- function(new, reservations, verbose=TRUE) {
     if(verbose) cat("Guide: Please choose your MPH concentration.\n")
   } else {
     ## Does the reservation already exist? Cancelling?
-    pre <- subset(reservations, TA == new$TA & tolower(Student) == tolower(new$Student) & tolower(Email) == tolower(new$Email) & Distance == new$Distance & tolower(Skype) == tolower(new$Skype) & Concentration == new$Concentration & desiredDate == new$desiredDate)
+    pre <- subset(reservations, TA == new$TA & tolower(trimws(Student)) == tolower(trimws(new$Student)) & 
+                    tolower(trimws(Email)) == tolower(trimws(new$Email)) & Distance == new$Distance &
+                    tolower(Skype) == tolower(new$Skype) & Concentration == new$Concentration & desiredDate == new$desiredDate)
     
     ## Is there an overlap? Someone reserved the slot already?
     ov <- subset(reservations, TA == new$TA & desiredDate == new$desiredDate)
     
     ## Do you already have a reservation?
-    gotone <- subset(reservations, tolower(Student) == tolower(new$Student) & tolower(Email) == tolower(new$Email) & Distance == new$Distance & tolower(Skype) == tolower(new$Skype) & Concentration == new$Concentration & desiredDate >= new$reservationDate)
+    gotone <- subset(reservations, tolower(trimws(Student)) == tolower(trimws(new$Student)) &
+                       tolower(trimws(Email)) == tolower(trimws(new$Email)) & 
+                       Distance == new$Distance & tolower(Skype) == tolower(new$Skype) & 
+                       Concentration == new$Concentration & desiredDate >= new$reservationDate)
     
     
     if (nrow(ov) > 0 & nrow(pre) ==  0) {
@@ -272,7 +277,7 @@ calendarBuild <- function(file, reservations, public=TRUE) {
   cat("END:VCALENDAR")
   cat("\n")
   sink()
-  drop_upload(file, path = "Github/MPHcapstoneTA/www", dtoken = token)
+  drop_upload(file, path = "github/mphcapstoneta/www", dtoken = token)
 }
 
 
@@ -337,8 +342,9 @@ loadReservationsFunc <- function() {
     load('reservationsHist.Rdata')        
     ## Check if it's the latest version
     newHist <- drop_history(dropbox_reservation_file, dtoken = token)
+    # newHist <- "NA"
     if(!identical(newHist, reservationsHist)) {
-      drop_download(dropbox_reservation_file, overwrite = TRUE, dtoken = token)
+      drop_download(dropbox_reservation_file, local_path = local_dropbox_reservation_file, overwrite = TRUE, dtoken = token)
     }        
     load("reservations.Rdata")
   } else {
@@ -364,7 +370,7 @@ shinyServer(function(input, output, session) {
   
   ## Define a new entry
   newEntry <- reactive({
-    data <- data.frame("TA"=input$ta, "Weekday"=input$weekday, "officeHour"=input$hour, "Student"=input$name, "Email"=input$email, "Distance"=input$distance, "Skype"=input$skype, "reservationDate"=as.POSIXlt(Sys.time(), "America/New_York"), "Concentration" = input$concentration, "Description"=input$description, stringsAsFactors=FALSE)
+    data <- data.frame("TA"=input$ta, "Weekday"=input$weekday, "officeHour"=input$hour, "Student"=trimws(input$name), "Email"=trimws(input$email), "Distance"=input$distance, "Skype"=input$skype, "reservationDate"=as.POSIXlt(Sys.time(), "America/New_York"), "Concentration" = input$concentration, "Description"=input$description, stringsAsFactors=FALSE)
     data$minimumPossible <- data$reservationDate + 60 * 60 * 24 * 1
     data$desiredDate <- getDesiredDate(data)
     data
@@ -418,8 +424,10 @@ shinyServer(function(input, output, session) {
                      emailInfo <- buildEmail(new, "cancel")
                      if(input$reserve == "Cancel reservation") {
                        reservations <- loadReservationsFunc()
-                       idx <- with(reservations, which(TA == new$TA & Student == new$Student & Email == new$Email & Distance == new$Distance & Skype == new$Skype & Concentration == new$Concentration & desiredDate == new$desiredDate))
-                       reservations <- reservations[-idx, ]
+                       idx <- with(reservations, which(trimws(TA) == trimws(new$TA) & trimws(tolower(Student)) == trimws(tolower(new$Student)) & 
+                                                         trimws(tolower(Email)) == trimws(tolower(new$Email)) & Distance == new$Distance &
+                                                         Skype == new$Skype & Concentration == new$Concentration & desiredDate == new$desiredDate))
+                       reservations <- reservations[-unique(idx), ]
                        
                        ## Update calendar
                        calendarBuild("www/publicCalendar.ics", reservations, TRUE)	
@@ -432,7 +440,7 @@ shinyServer(function(input, output, session) {
                        #cat(conf)
                        
                        ## Create backup just in case
-                       saveRes(reservations, file = file.path(".", paste0("reservations_backup-", gsub("\\s|:", "_", Sys.time()), ".Rdata")), dest =  file.path("Github", "MPHcapstoneTA", "mphcapstoneta", "backups"))
+                       saveRes(reservations, file = file.path(".", paste0("reservations_backup-", gsub("\\s|:", "_", Sys.time()), ".Rdata")), dest =  file.path("github", "mphcapstoneta", "mphcapstoneta", "backups"))
                        
                        ## Save changes
                        saveRes(reservations)
@@ -462,7 +470,7 @@ shinyServer(function(input, output, session) {
                        #cat(conf)
                        
                        ## Create backup just in case
-                       saveRes(reservations, file = file.path(".", paste0("reservations_backup-", gsub("\\s|:", "_", Sys.time()), ".Rdata")), dest = file.path("Github", "MPHcapstoneTA", "mphcapstoneta", "backups"))
+                       saveRes(reservations, file = file.path(".", paste0("reservations_backup-", gsub("\\s|:", "_", Sys.time()), ".Rdata")), dest = file.path("github", "mphcapstoneta", "mphcapstoneta", "backups"))
                        
                        ## Save changes
                        saveRes(reservations)
@@ -552,7 +560,7 @@ shinyServer(function(input, output, session) {
   
   ## All reservations
   output$taData <- downloadHandler(
-    filename  <-  function() { 'MPHcapstoneTAreservations2016.csv' },
+    filename  <-  function() { 'MPHcapstoneTAreservations2019.csv' },
     content  <-  function(file) {
       if(input$tapass == tapass) {
         data <- loadReservationsFunc()

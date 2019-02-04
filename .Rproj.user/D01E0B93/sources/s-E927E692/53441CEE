@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1549281349291.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "53441CEE",
+    "lastKnownWriteTime" : 8243121572515706725,
+    "last_content_update" : 1549281349291,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "FE3C0A7B",
+        "caption" : "reservations",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=reservations&cache_key=FE3C0A7B",
+        "displayedObservations" : "6",
+        "environment" : "",
+        "object" : "reservations",
+        "preview" : "0",
+        "totalObservations" : "6",
+        "variables" : "12"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

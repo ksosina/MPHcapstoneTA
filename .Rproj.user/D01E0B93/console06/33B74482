@@ -39,4 +39,3 @@ packages ‘devtools’, ‘rJython’, ‘rJava’, ‘rjson’ are not availab
 [0K[?25h> install_github("trinker/gmailR")[0K[?25l
 [0K[?25hError in curl::curl_fetch_memory(url, handle = h) :[0K[?25l
   gnutls_handshake() failed: Error in the push function.[0K
-]0;ksosina@DESKTOP-OSU46N0: /mnt/c/Users/kayod/Dropbox/GitHub/MPHcapstoneTA[0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/GitHub/MPHcapstoneTA[0m$[0K[74G

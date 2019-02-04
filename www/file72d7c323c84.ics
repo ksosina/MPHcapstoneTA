@@ -2,7 +2,7 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//JHSPH//MPHcapstone//EN
 BEGIN:VEVENT
-SUMMARY: TA Hojoon Student Celina Santiago Location Hampton 145HH 
+SUMMARY: Celina Santiago csantia9@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Hampton 145HH 
 DTSTAMP:20190202T105300
 DTSTART;TZID=US/Eastern:20190205T120000
 DTEND;TZID=US/Eastern:20190205T123000
