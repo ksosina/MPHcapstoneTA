@@ -2,51 +2,45 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//JHSPH//MPHcapstone//EN
 BEGIN:VEVENT
-SUMMARY: TA Hojoon Student Celina Santiago Location Hampton 145HH 
+SUMMARY: Celina Santiago csantia9@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Hampton 145HH 
 DTSTAMP:20190202T105300
 DTSTART;TZID=US/Eastern:20190205T120000
 DTEND;TZID=US/Eastern:20190205T123000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Hojoon Student berje shammassian Location Hampton 145HH 
+SUMMARY: berje shammassian bshamma1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Hampton 145HH 
 DTSTAMP:20190204T132000
 DTSTART;TZID=US/Eastern:20190206T133000
 DTEND;TZID=US/Eastern:20190206T140000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Hojoon Student berje shammassian Location Hampton 144HH 
+SUMMARY: berje shammassian bshamma1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Hampton 144HH 
 DTSTAMP:20190206T142700
 DTSTART;TZID=US/Eastern:20190212T120000
 DTEND;TZID=US/Eastern:20190212T123000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Hojoon Student Celina Santiago Location Wolfe W2009 
+SUMMARY: Celina Santiago csantia9@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20190206T232800
 DTSTART;TZID=US/Eastern:20190213T133000
 DTEND;TZID=US/Eastern:20190213T140000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Hojoon Student Joseph Yoon Location Hampton 144HH 
+SUMMARY: Joseph Yoon jyoon45@jh.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Hampton 144HH 
 DTSTAMP:20190208T084200
 DTSTART;TZID=US/Eastern:20190212T123000
 DTEND;TZID=US/Eastern:20190212T130000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Hojoon Student Hazem Rihawi Location Wolfe W2009 
+SUMMARY: Hazem Rihawi hrihawi1@jhu.edu  1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20190211T093100
 DTSTART;TZID=US/Eastern:20190213T140000
 DTEND;TZID=US/Eastern:20190213T143000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Hojoon Student Allyse Depenbrock Location Hampton 144HH 
+SUMMARY: Allyse Depenbrock adepenb1@jhu.edu  1. MPH Customized Program of Study Hampton 144HH 
 DTSTAMP:20190211T114400
 DTSTART;TZID=US/Eastern:20190212T130000
 DTEND;TZID=US/Eastern:20190212T133000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Hojoon Student berje shammassian Location Wolfe E9519 
-DTSTAMP:20190213T114300
-DTSTART;TZID=US/Eastern:20190219T130000
-DTEND;TZID=US/Eastern:20190219T133000
 END:VEVENT
 END:VCALENDAR
