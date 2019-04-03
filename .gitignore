@@ -13,6 +13,7 @@ droptoken.rds
 
 ## Gmail
 .gmail_private
+gmail_acct.gmail_private
 
 ## Misc
 rsconnect
@@ -20,6 +21,7 @@ Old
 
 ## Schedule files
 .xlsx
+
 
 
 ## R History files
