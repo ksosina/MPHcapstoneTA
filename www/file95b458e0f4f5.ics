@@ -1,0 +1,70 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//JHSPH//MPHcapstone//EN
+BEGIN:VEVENT
+SUMMARY: Isaac Naazie inaazie1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2205 
+DTSTAMP:20190219T154600
+DTSTART;TZID=US/Eastern:20190227T130000
+DTEND;TZID=US/Eastern:20190227T133000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Yingfei Wu ywu155@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2205 
+DTSTAMP:20190220T212500
+DTSTART;TZID=US/Eastern:20190227T133000
+DTEND;TZID=US/Eastern:20190227T140000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Jacqueline Cronin jcronin3@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W4007 
+DTSTAMP:20190226T151800
+DTSTART;TZID=US/Eastern:20190305T150000
+DTEND;TZID=US/Eastern:20190305T153000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Isaac Naazie mcnaazie@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W4007 
+DTSTAMP:20190227T132600
+DTSTART;TZID=US/Eastern:20190305T153000
+DTEND;TZID=US/Eastern:20190305T160000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Kayode Sosina kayodesosina@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W4007 
+DTSTAMP:20190227T132900
+DTSTART;TZID=US/Eastern:20190305T160000
+DTEND;TZID=US/Eastern:20190305T163000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: YINGFEI WU ywu155@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2205 
+DTSTAMP:20190227T164700
+DTSTART;TZID=US/Eastern:20190306T140000
+DTEND;TZID=US/Eastern:20190306T143000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Kayode kayodesosina@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2205 
+DTSTAMP:20190227T175300
+DTSTART;TZID=US/Eastern:20190306T143000
+DTEND;TZID=US/Eastern:20190306T150000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Ijeamaka Ezebilo ijeamakaezebilo@yahoo.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W4007 
+DTSTAMP:20190301T163000
+DTSTART;TZID=US/Eastern:20190305T163000
+DTEND;TZID=US/Eastern:20190305T170000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Viraj Ambalam vambala1@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2205 
+DTSTAMP:20190302T173300
+DTSTART;TZID=US/Eastern:20190306T133000
+DTEND;TZID=US/Eastern:20190306T140000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Katie klichte5@jhu.edu  1. MPH Customized Program of Study Wolfe W3011 
+DTSTAMP:20190323T155500
+DTSTART;TZID=US/Eastern:20190326T150000
+DTEND;TZID=US/Eastern:20190326T153000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Ngozi Osuji nosuji1@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W3011 
+DTSTAMP:20190325T124000
+DTSTART;TZID=US/Eastern:20190326T153000
+DTEND;TZID=US/Eastern:20190326T160000
+END:VEVENT
+END:VCALENDAR

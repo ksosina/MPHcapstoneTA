@@ -10,6 +10,18 @@ load("./mphcapstoneta/backups/reservations_backup-2019-01-30_20_01_31.Rdata")
 
 load("reservations.Rdata")
 
+
+reservations$mtgRoom <- sapply(seq_len(nrow(reservations)), function(i){
+  assignRoom(reservations$TA[i], reservations$desiredDate[i])
+})
+
+
+reservations$mtgRoom <- ifelse(reservations$Distance == "No", reservations$mtgRoom, "Online")
+
+data.table::data.table(reservations$TA, reservations$desiredDate, reservations$mtgRoom)
+save(reservations, file = "reservations.Rdata")
+
+
 # reservations <- rbind(reservations[-c(2),],
 #                       data.frame("TA"="Daniel", "Weekday"="Monday", "officeHour"="13:30-14:00", "Student"="Isabella Gomes", "Email"="igomes3@jhu.edu", "Distance"="No", "Skype"="", "reservationDate"="2019-01-30 14:35:18 EST", "Concentration"="3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research", "Description"="Am dealing with a composite outcome, having issues with data management.", 
 #                                  "minimumPossible"= "2019-02-02 19:36:11", "desiredDate"="2019-02-04 13:30:00", stringsAsFactors=FALSE),
@@ -25,3 +37,8 @@ load("reservations.Rdata")
 
 reservations <- rbind(reservations,
                       data.frame("TA"="Kayla", "Weekday"="Monday", "officeHour"="15:30-16:00", "Student"="Marjanna Barber-Dubois", "Email"="mbarbe19@jhmi.edu", "Distance"="Yes", "Skype"="mebarberdubois", "reservationDate"="2019-02-04 14:38:18 EST", "Concentration"="1. MPH Customized Program of Study", "Description"="I would like to know if I*m on the right track with the outline for the capstone, and would also like the opportunity to get some advice on structuring a literature review.", "minimumPossible"="2019-02-04 19:36:11", "desiredDate"="2019-02-04 15:30:00", stringsAsFactors=FALSE))
+
+
+options(rsconnect.check.certificate = F)
+rsconnect::deployApp()
+options(rsconnect.check.certificate = T)

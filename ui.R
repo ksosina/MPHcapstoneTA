@@ -42,7 +42,7 @@ fluidPage(theme = shinytheme("darkly"),
                 ## Area of focus
                 helpText("Areas of Focus: Biostatistics, Statistical methods, Data integration, Genetic epidemiology."),
                 tags$hr(),
-                HTML("Available: Tuesdays & Fridays")
+                HTML("Available: Tuesdays & Thursdays")
               ),
               
               ## TA: Kayode
@@ -72,7 +72,7 @@ fluidPage(theme = shinytheme("darkly"),
                 ## Area of focus
                 helpText("Areas of focus: Epidemiological methods, Social epidemiology, Health inequalities, Food & Nutrition, Survey data."),
                 tags$hr(),
-                HTML("Available: Mondays & Wednesdays")
+                HTML("Available: Tuesdays & Fridays")
               ),
               
               ## TA: Kayla
@@ -161,19 +161,19 @@ fluidPage(theme = shinytheme("darkly"),
                 ),			
                 tabPanel("TA info",
                          h4("Kellan Baker"),
-                         tags$p("Office Hours: Monday 12:00-2:00 pm & Thursday 3:00-5:00 pm"),
+                         tags$p("Office Hours: Monday 12:00-2:00 pm & Thursday 1:00-3:00 pm"),
                          helpText("Areas of focus: Health legal & Government policy, Policy analysis, Bioethics, Health care management, Grant proposals, Health economics, Economic evaluation."),
                          h4("Prosenjit Kundu"),
-                         tags$p("Office Hours: Tuesday 1:15-3:15 pm & Friday 3:30-5:30 pm"),
+                         tags$p("Office Hours: Tuesday 1:00-3:00 pm & Thursday 4:00-6:00 pm"),
                          helpText("Areas of Focus: Biostatistics, Statistical methods, Data integration, Genetic epidemiology."),
                          h4("Kayode Sosina"),
                          tags$p("Office Hours: Tuesday 3:00-5:00 pm & Wednesday 1:00-3:00 pm"),
                          helpText("Areas of focus: Biostatistics, Longitudinal data analysis, Survival analysis, Stats–genetics, Genomics."),
                          h4("Hojoon Lee"),
-                         tags$p("Office Hours: Tuesday 12:00-2:00 pm & Wednesday 1:30-3:30 pm"),
+                         tags$p("Office Hours: Tuesday 12:00-2:00 pm & Wednesday 12:00-2:00 pm"),
                          helpText("Areas of focus: General epidemiology (methods, study design), Public health surveillance, Professional epidemiology methods, Epidemiology implementation, Literature reviews."),
                          h4("Daniel Antiporta Penaloza"),
-                         tags$p("Office Hours: Monday 1:30-3:30 pm & Wednesday 1:30-3:30 pm"),
+                         tags$p("Office Hours: Tuesday 3:00-5:00 pm & Firday 9:00-11:00 am"),
                          helpText("Areas of focus: Epidemiological methods, Social epidemiology, Health inequalities, Food & Nutrition, Survey data."),
                          h4("Kayla Tormohlen"),
                          tags$p("Office Hours: Monday 2:30-4:30 pm & Friday 12:30-2:30 pm"),

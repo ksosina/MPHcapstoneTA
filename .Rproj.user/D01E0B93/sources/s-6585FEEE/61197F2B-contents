@@ -15,20 +15,20 @@ token <- readRDS("droptoken.rds")
 
 ## Options
 TAchoices <- list(
-  "Monday" = c("Choose a TA", "Kellan Baker" = "Kellan", "Daniel Antiporta Penaloza" = "Daniel", "Kayla Tormohlen"= "Kayla"),
-  "Tuesday" = c("Choose a TA", "Prosenjit Kundu" = "Prosenjit", "Hojoon Lee" = "Hojoon", "Kayode Sosina" = "Kayode"),
-  "Wednesday" = c("Choose a TA", "Hojoon Lee" = "Hojoon", "Kayode Sosina" = "Kayode", "Daniel Antiporta Penaloza" = "Daniel"),
-  "Thursday" = c("Choose a TA", "Kellan Baker" = "Kellan"),
-  "Friday" = c("Choose a TA", "Prosenjit Kundu" = "Prosenjit", "Kayla Tormohlen"= "Kayla")
+  "Monday" = c("Choose a TA", "Kellan Baker" = "Kellan", "Kayla Tormohlen"= "Kayla"),
+  "Tuesday" = c("Choose a TA", "Prosenjit Kundu" = "Prosenjit", "Hojoon Lee" = "Hojoon", "Kayode Sosina" = "Kayode", "Daniel Antiporta Penaloza" = "Daniel"),
+  "Wednesday" = c("Choose a TA", "Hojoon Lee" = "Hojoon", "Kayode Sosina" = "Kayode"),
+  "Thursday" = c("Choose a TA", "Kellan Baker" = "Kellan", "Prosenjit Kundu" = "Prosenjit"),
+  "Friday" = c("Choose a TA", "Kayla Tormohlen"= "Kayla", "Daniel Antiporta Penaloza" = "Daniel")
 )
 
 TAhour <- list(
   "Daniel" = list(
-    "Monday" = c("13:30-14:00", "14:00-14:30", "14:30-15:00", "15:00-15:30"),
-    "Tuesday" = "00:00",
-    "Wednesday" = c("13:30-14:00", "14:00-14:30", "14:30-15:00", "15:00-15:30"),
+    "Monday" = "00:00",
+    "Tuesday" = c("15:00-15:30", "15:30-16:00", "16:00-16:30", "16:30-17:00"),
+    "Wednesday" = "00:00",
     "Thursday" = "00:00",
-    "Friday" =  "00:00"
+    "Friday" =  c("9:00-9:30", "9:30-10:00", "10:00-10:30", "10:30-11:00")
   ),
   "Kayode" = list(
     "Monday" = "00:00",
@@ -39,23 +39,23 @@ TAhour <- list(
   ),
   "Prosenjit" = list(
     "Monday" = "00:00",
-    "Tuesday" = c("13:15-13:45", "13:45-14:15", "14:15-14:45", "14:45-15:15"),
+    "Tuesday" = c("13:00-13:30", "13:30-14:00", "14:00-14:30", "14:30-15:00"),
     "Wednesday" = "00:00",
-    "Thursday" = "00:00",
-    "Friday" = c("15:30-16:00", "16:00-16:30", "16:30-17:00", "17:00-17:30")
+    "Thursday" =  c("16:00-16:30", "16:30-17:00", "17:00-17:30", "17:30-18:00"),
+    "Friday" = "00:00"
   ),
   "Hojoon" = list(
     "Monday" = "00:00",
     "Tuesday" = c("12:00-12:30", "12:30-13:00", "13:00-13:30", "13:30-14:00"),
-    "Wednesday" =  c("13:30-14:00", "14:00-14:30", "14:30-15:00", "15:00-15:30"),
+    "Wednesday" =  c("12:00-12:30", "12:30-13:00", "13:00-13:30", "13:30-14:00"),
     "Thursday" = "00:00",
     "Friday" = "00:00"
   ),
   "Kellan" = list(
-    "Monday" = c("12:00-12:30, 12:30-13:00", "13:00-13:30", "13:30-14:00"),
+    "Monday" = c("12:00-12:30", "12:30-13:00", "13:00-13:30", "13:30-14:00"),
     "Tuesday" = "00:00",
     "Wednesday" = "00:00",
-    "Thursday" = c("15:00-15:30", "15:30-16:00", "16:00-16:30", "16:30-17:00"),
+    "Thursday" = c("13:00-13:30", "13:30-14:00", "14:00-14:30", "14:30-15:00"),
     "Friday" = "00:00"
   ),
   "Kayla" = list(
@@ -349,6 +349,11 @@ loadReservationsFunc <- function() {
     load("reservations.Rdata")
   } else {
     reservations <- data.frame("TA"=NA, "Weekday"=NA, "officeHour"=NA, "Student"=NA, "Email"=NA, "Distance"=NA, "Skype"=NA, "reservationDate"=Sys.time() -1, "Concentration"=NA, "Description"=NA, "minimumPossible"=as.POSIXlt(Sys.time() -1, "America/New_York"), "desiredDate"=as.POSIXlt(Sys.time() -1, "America/New_York"), stringsAsFactors=FALSE)
+    
+    ## Assign room
+    reservations$mtgRoom <- NA
+    
+    
     saveRes(reservations)
   }
   reservations$reservationDate <- as.POSIXlt(reservations$reservationDate, "America/New_York")
@@ -373,6 +378,8 @@ shinyServer(function(input, output, session) {
     data <- data.frame("TA"=input$ta, "Weekday"=input$weekday, "officeHour"=input$hour, "Student"=trimws(input$name), "Email"=trimws(input$email), "Distance"=input$distance, "Skype"=input$skype, "reservationDate"=as.POSIXlt(Sys.time(), "America/New_York"), "Concentration" = input$concentration, "Description"=input$description, stringsAsFactors=FALSE)
     data$minimumPossible <- data$reservationDate + 60 * 60 * 24 * 1
     data$desiredDate <- getDesiredDate(data)
+    data$mtgRoom <- assignRoom(data$TA, data$desiredDate)
+    data$mtgRoom <- ifelse(data$Distance == "No", data$mtgRoom, "Online")
     data
   })
   
@@ -380,13 +387,13 @@ shinyServer(function(input, output, session) {
   output$previous <- renderDataTable({
     new <- newEntry()
     reservations <- loadReservationsFunc()		
-    preDisplay <- subset(reservations, desiredDate >= new$reservationDate)[, c("TA", "Student", "Weekday", "officeHour", "desiredDate")]
+    preDisplay <- subset(reservations, desiredDate >= new$reservationDate)[, c("TA", "Student", "Weekday", "officeHour", "desiredDate", "mtgRoom")]
     preDisplay <- preDisplay[order(preDisplay$desiredDate), ]
     preDisplay$desiredDate <- as.character(as.Date(preDisplay$desiredDate, tz="America/New_York"))
-    colnames(preDisplay) <- c("TA", "Student Name", "Weekday", "Office hour", "Date")
+    colnames(preDisplay) <- c("TA", "Student Name", "Weekday", "Office hour", "Date", "Location")
     
     if(nrow(preDisplay) == 0) {
-      preDisplay <- data.frame("TA"="none", "Student Name"="none", "Weekday"="none", "Office Hour"="none", "Date"="none")
+      preDisplay <- data.frame("TA"="none", "Student Name"="none", "Weekday"="none", "Office Hour"="none", "Date"="none", "Location"="none")
     }
     preDisplay		
   })

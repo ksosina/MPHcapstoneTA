@@ -1,0 +1,76 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//JHSPH//MPHcapstone//EN
+BEGIN:VEVENT
+SUMMARY: Joseph Yoon jyoon45@jh.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2017 
+DTSTAMP:20190221T182700
+DTSTART;TZID=US/Eastern:20190226T120000
+DTEND;TZID=US/Eastern:20190226T123000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: berje shammassian bshamma1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
+DTSTAMP:20190224T085800
+DTSTART;TZID=US/Eastern:20190227T133000
+DTEND;TZID=US/Eastern:20190227T140000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: miho sodeno msodeno1@jhu.edu  6. Health in Crisis & Humanitarian Assistance Wolfe W2009 
+DTSTAMP:20190225T201100
+DTSTART;TZID=US/Eastern:20190227T140000
+DTEND;TZID=US/Eastern:20190227T143000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Joseph Yoon jyoon45@jh.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
+DTSTAMP:20190226T124800
+DTSTART;TZID=US/Eastern:20190227T143000
+DTEND;TZID=US/Eastern:20190227T150000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Celina Santiago csantia9@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
+DTSTAMP:20190226T134600
+DTSTART;TZID=US/Eastern:20190306T133000
+DTEND;TZID=US/Eastern:20190306T140000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Sabrina Clermont sabrina.clermont15@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2017 
+DTSTAMP:20190304T082700
+DTSTART;TZID=US/Eastern:20190305T133000
+DTEND;TZID=US/Eastern:20190305T140000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Minh Phuong Nguyen mnguye64@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
+DTSTAMP:20190304T135800
+DTSTART;TZID=US/Eastern:20190306T150000
+DTEND;TZID=US/Eastern:20190306T153000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Miho Sodeno msodeno1@jhu.edu  6. Health in Crisis & Humanitarian Assistance Wolfe W2017 
+DTSTAMP:20190304T233200
+DTSTART;TZID=US/Eastern:20190312T133000
+DTEND;TZID=US/Eastern:20190312T140000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: berje shammassian bshamma1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2017 
+DTSTAMP:20190306T135900
+DTSTART;TZID=US/Eastern:20190312T120000
+DTEND;TZID=US/Eastern:20190312T123000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Jian jian-chu@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2017 
+DTSTAMP:20190306T144800
+DTSTART;TZID=US/Eastern:20190312T130000
+DTEND;TZID=US/Eastern:20190312T133000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Celina Santiago csantia9@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
+DTSTAMP:20190306T152600
+DTSTART;TZID=US/Eastern:20190313T133000
+DTEND;TZID=US/Eastern:20190313T140000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Pragna Shetty pragna.shetty@jhu.edu  1. MPH Customized Program of Study Wolfe W2017 
+DTSTAMP:20190309T154700
+DTSTART;TZID=US/Eastern:20190312T123000
+DTEND;TZID=US/Eastern:20190312T130000
+END:VEVENT
+END:VCALENDAR

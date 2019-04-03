@@ -2,93 +2,87 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//JHSPH//MPHcapstone//EN
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Isaac Naazie Location *to be determined* 
+SUMMARY: Isaac Naazie inaazie1@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2205 
 DTSTAMP:20190219T154600
 DTSTART;TZID=US/Eastern:20190227T130000
 DTEND;TZID=US/Eastern:20190227T133000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Yingfei Wu Location *to be determined* 
+SUMMARY: Yingfei Wu ywu155@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2205 
 DTSTAMP:20190220T212500
 DTSTART;TZID=US/Eastern:20190227T133000
 DTEND;TZID=US/Eastern:20190227T140000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Jacqueline Cronin Location *to be determined* 
+SUMMARY: Jacqueline Cronin jcronin3@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W4007 
 DTSTAMP:20190226T151800
 DTSTART;TZID=US/Eastern:20190305T150000
 DTEND;TZID=US/Eastern:20190305T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Isaac Naazie Location *to be determined* 
+SUMMARY: Isaac Naazie mcnaazie@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W4007 
 DTSTAMP:20190227T132600
 DTSTART;TZID=US/Eastern:20190305T153000
 DTEND;TZID=US/Eastern:20190305T160000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Kayode Sosina Location *to be determined* 
+SUMMARY: Kayode Sosina kayodesosina@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W4007 
 DTSTAMP:20190227T132900
 DTSTART;TZID=US/Eastern:20190305T160000
 DTEND;TZID=US/Eastern:20190305T163000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student YINGFEI WU Location *to be determined* 
+SUMMARY: YINGFEI WU ywu155@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2205 
 DTSTAMP:20190227T164700
 DTSTART;TZID=US/Eastern:20190306T140000
 DTEND;TZID=US/Eastern:20190306T143000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Kayode Location *to be determined* 
+SUMMARY: Kayode kayodesosina@gmail.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2205 
 DTSTAMP:20190227T175300
 DTSTART;TZID=US/Eastern:20190306T143000
 DTEND;TZID=US/Eastern:20190306T150000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Ijeamaka Ezebilo Location *to be determined* 
+SUMMARY: Ijeamaka Ezebilo ijeamakaezebilo@yahoo.com  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W4007 
 DTSTAMP:20190301T163000
 DTSTART;TZID=US/Eastern:20190305T163000
 DTEND;TZID=US/Eastern:20190305T170000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Viraj Ambalam Location *to be determined* 
+SUMMARY: Viraj Ambalam vambala1@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2205 
 DTSTAMP:20190302T173300
 DTSTART;TZID=US/Eastern:20190306T133000
 DTEND;TZID=US/Eastern:20190306T140000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Katie Location *to be determined* 
+SUMMARY: Katie klichte5@jhu.edu  1. MPH Customized Program of Study Wolfe W3011 
 DTSTAMP:20190323T155500
 DTSTART;TZID=US/Eastern:20190326T150000
 DTEND;TZID=US/Eastern:20190326T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Ngozi Osuji Location *to be determined* 
+SUMMARY: Ngozi Osuji nosuji1@jhmi.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W3011 
 DTSTAMP:20190325T124000
 DTSTART;TZID=US/Eastern:20190326T153000
 DTEND;TZID=US/Eastern:20190326T160000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Tien-Hao Chang Location *to be determined* 
+SUMMARY: Tien-Hao Chang tchang38@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2205 
 DTSTAMP:20190326T083500
 DTSTART;TZID=US/Eastern:20190327T140000
 DTEND;TZID=US/Eastern:20190327T143000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Jacquie Cronin Location Wolfe W2009 
+SUMMARY: Jacquie Cronin jcronin3@jhu.edu  3. Epidemiologic & Biostatistics Methods for Public Health & Clinical Research Wolfe W2009 
 DTSTAMP:20190327T103700
 DTSTART;TZID=US/Eastern:20190402T150000
 DTEND;TZID=US/Eastern:20190402T153000
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: TA Kayode Student Michael Cahill Location Wolfe W2009 
+SUMMARY: Michael Cahill michael.cahill@jhu.edu cahillmichael 1. MPH Customized Program of Study Wolfe W2009 
 DTSTAMP:20190327T130800
 DTSTART;TZID=US/Eastern:20190402T153000
 DTEND;TZID=US/Eastern:20190402T160000
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY: TA Kayode Student Yasmine Nemazee Location Wolfe W2205 
-DTSTAMP:20190402T170800
-DTSTART;TZID=US/Eastern:20190410T130000
-DTEND;TZID=US/Eastern:20190410T133000
 END:VEVENT
 END:VCALENDAR

@@ -39,3 +39,33 @@ packages ‘devtools’, ‘rJython’, ‘rJava’, ‘rjson’ are not availab
 [0K[?25h> install_github("trinker/gmailR")[0K[?25l
 [0K[?25hError in curl::curl_fetch_memory(url, handle = h) :[0K[?25l
   gnutls_handshake() failed: Error in the push function.[0K
+[0m[0Klibrary(readxl)[0K[?25l
+library(dplyr)[0K
+-bash: alias: added: not found[0K[?25l
+-bash: alias: by: not found[0K
+-bash: alias: Anaconda3: not found[0K
+-bash: alias: 2018.12: not found[0K
+-bash: alias: installer: not found[0K
+[0K[?25h]0;ksosina@DESKTOP-OSU46N0: /mnt/c/Users/kayod/Dropbox/github/mphcapstoneta(base) [0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/github/mphcapstoneta[0m$ library(readxl)[0K[?25l
+-bash: syntax error near unexpected token `readxl'[0K
+(base) [0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/github/mphcapstoneta[0m$ library(dplyr)[0K
+-bash: syntax error near unexpected token `dplyr'[0K
+(base) [0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/github/mphcapstoneta[0m$[0K[81G[?25h[?25l(base) [0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/github/mphcapstoneta[0m$ library(readxl)[0K
+-bash: syntax error near unexpected token `readxl'[0K
+(base) [0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/github/mphcapstoneta[0m$ library(dplyr)[0K
+-bash: syntax error near unexpected token `dplyr'[0K
+(base) [0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/github/mphcapstoneta[0m$ #rooms[0K[?25h <- read_excel("rep[0Ko[?25l
+rt - MPH Capstone TA office hours - revised.xlsx")[0K
+(base) [0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/github/mphcapstoneta[0m$ rooms <- read_excel("TA C[0Ka
+pstone hours_4th Term.xlsx")[0K
+-bash: syntax error near unexpected token `('[0K
+(base) [0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/github/mphcapstoneta[0m$ rooms <- rooms %>% filter[0K(
+complete.cases(rooms))[0K
+-bash: syntax error near unexpected token `('[0K
+(base) [0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/github/mphcapstoneta[0m$ rooms <- rooms %>% mutate[0K(
+date=as.Date(`Date`, format="%m/%d/%Y", tz="America/New_York"))[0K
+-bash: syntax error near unexpected token `('[0K
+(base) [0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/github/mphcapstoneta[0m$ rooms <- rooms %>% arrang[0Ke
+(date)[0K
+-bash: syntax error near unexpected token `('[0K
+(base) [0;32;92mksosina@DESKTOP-OSU46N0[0m:[0;34;94m/mnt/c/Users/kayod/Dropbox/github/mphcapstoneta[0m$[0K[81G[?25h

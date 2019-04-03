@@ -56,3 +56,25 @@ TAroom <- lapply(tas, function(ta) {
 })
 names(TAroom) = c("Prosenjit", "Kayode", "Daniel", "Hojoon", "Kayla", "Kellan") 
 save(TAroom, file = "TAroom.Rdata")
+
+
+
+
+#### 2019 (Update 4/01/2019) April
+library(readxl)
+library(dplyr)
+#rooms <- read_excel("report - MPH Capstone TA office hours - revised.xlsx")
+rooms <- read_excel("TA Capstone hours_4th Term.xlsx")
+rooms <- rooms %>% filter(complete.cases(rooms))
+rooms <- rooms %>% mutate(date=as.Date(`Date`, format="%m/%d/%Y", tz="America/New_York"))
+rooms <- rooms %>% arrange(date)
+
+tas <- c("Kundu", "Sosina", "Antiporta", "Lee", "Tormohlen", "Baker") 
+TAroom <- lapply(tas, function(ta) {
+  use <- rooms[grepl(ta, rooms$Name), ]
+  res <- use$Room
+  names(res) <- as.character(use$date)
+  return(res)
+})
+names(TAroom) = c("Prosenjit", "Kayode", "Daniel", "Hojoon", "Kayla", "Kellan") 
+save(TAroom, file = "TAroom.Rdata")

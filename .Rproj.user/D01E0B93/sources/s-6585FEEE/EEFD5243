@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4048021054",
+    "hash" : "0",
     "id" : "EEFD5243",
-    "lastKnownWriteTime" : 1548807623,
-    "last_content_update" : 1548807623960,
+    "lastKnownWriteTime" : 1554157613,
+    "last_content_update" : 1554157613006,
     "path" : "C:/Users/kayod/Dropbox/GitHub/MPHcapstoneTA/TAroom.R",
     "project_path" : "TAroom.R",
     "properties" : {
-        "cursorPosition" : "41,0",
-        "scrollLine" : "0"
+        "cursorPosition" : "78,6",
+        "scrollLine" : "12"
     },
     "relative_order" : 2,
     "source_on_save" : false,
