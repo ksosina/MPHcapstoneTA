@@ -10,9 +10,11 @@ setup_shiny.R
 scristia-droptoken.rds
 droptoken.rds
 .httr-oauth
+*.rds
+*.httr-oauth
 
 ## Gmail
-.gmail_private
+*.gmail_private
 gmail_acct.gmail_private
 
 ## Misc
@@ -20,10 +22,10 @@ rsconnect
 Old
 
 ## Schedule files
-.xlsx
+*.xlsx
 
 
 
 ## R History files
-.Rhistory
+*.Rhistory
 
