@@ -10,6 +10,8 @@ To setup the dropbox account in R, you need the rdrop2 package in R. Specific in
 
 To enable email notifications, you'll need to setup gmail in R. Use the gmailR package in R. More details about doing this can be found here https://github.com/kbroman/mygmailR.
 
+Once these packages are installed. Run setup_shiny.R to generate the necessary files.
+
 ## Found a bug?
 
 Please document the problem and submit it in the [issues](https://github.com/ksosina/MPHcapstoneTA/issues) page. Thank you!
