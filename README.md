@@ -3,6 +3,11 @@ MPHcapstoneTA
 
 Shiny app made so students can sign up and reserve office hour slots with MPH capstone TAs. Minimizes the need for TAs to email students and concentrates sign up sheets in a single site.
 
+## Setup 
+You'll need a dropbox account and gmail account.
+To setup the dropbox account in R, you need the rdrop2 package in R. Specific instructions can be found at https://github.com/karthik/rdrop2 
+To enable email notifications, you'll need to setup gmail in R. Use the gmailR package in R. More details about doing this can be found here https://github.com/kbroman/mygmailR  
+
 ## Found a bug?
 
 Please document the problem and submit it in the [issues](https://github.com/ksosina/MPHcapstoneTA/issues) page. Thank you!
